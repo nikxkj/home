@@ -1,262 +1,247 @@
 h2 {
-  margin: 20px 0;
-  line-height: 1.1;
+  display: table;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.offset {
+  padding-top: 30px;
 }
 
 section .container {
-  padding-top: 0;
-  width: 830px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.border .container {
-  padding-left: 9%;
-  padding-right: 9%;
-}
-
-ul {
-  margin-left: 25px;
-}
-
-ul li {
-  padding-left: 10px;
-}
-
-#projtitle {
-  padding-top: 30px;
-}
-
-#projtitle .container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 0;
-  height: 200px;
-}
-
-#projtitle .left {
-  width: 200px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  border: 2px solid #000;
-}
-
-#projtitle .left img {
-  vertical-align: middle;
-}
-
-#projtitle .right {
-  height: 68%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: relative;
   width: 100%;
 }
 
-#projtitle .right h1,
-#projtitle .right p {
+#projtitle,
+.summary {
+  position: relative;
+}
+#projtitle .border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+} /*
+#projtitle .border .container {
+  padding: 0 0;
+}
+#projtitle .border > div div {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border: 1px solid;
+  right: 5%;
+}*/
+#projtitle .border > div {
+  position: relative;
+  height: 100%;
+  width: 1050px;
+  max-width: 90%;
+}
+#projtitle .border > div div {
+  position: absolute;
+  border: 1px solid;
+  width: 90%;
+  height: 130%;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: right;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+#projtitle svg {
+  /*height: 110%;*/
+  width: auto;
+  position: absolute;
+  right: 5%;
+  z-index: 5;
+  top: 5%;
+  height: 134%;
+}
+
+#projtitle .flex {
+  align-items: center;
+}
+#projtitle .left {
+  position: relative;
+}
+#projtitle .left img {
+  width: 220px;
+  min-height: 100px;
+}
+#projtitle .right {
+  position: relative;
   padding-left: 20px;
 }
-
-#projtitle h1 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+/*
+.casestudy {
+  width: 800px;
+  max-width: 100%;
 }
-
-#projtitle h1::after {
-  content: "";
+.casestudy h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.casestudy p {
+  margin: 15px 0;
+  padding-left: 60px;
+}
+*/
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.summary {
+  z-index: 5;
+}
+.summary p,
+.summary ul,
+.summary ol {
+  margin: 15px 0;
+  padding-left: 40px;
+}
+.summary li {
+  margin-left: 15px;
+}
+.summary .inner,
+.summary.img100 {
+  width: 1050px;
+  max-width: 90%;
+}
+.summary .left {
+  width: 70%;
+  margin-right: 4%;
   display: inline-block;
-  height: 2px;
-  width: 105%;
+}
+.summary .right {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+}
+
+.card {
   background: #000;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  -webkit-transition: 0.5s width;
-  transition: 0.5s width;
+  /*border: 1px solid;
+  padding: 10px;*/
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.5s border-color;
 }
-
-.border {
-  border: 2px solid #000;
-  margin: 5% 8%;
-  padding-top: 30px;
-}
-
-.casestudy img {
-  margin: 10px 0;
-}
-
-.casestudy .card img {
-  margin: 0;
-  -webkit-transition: 0.5s width;
-  transition: 0.5s width;
-}
-
-.casestudy .card:hover {
-  overflow: visible;
-  z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-color: transparent;
-}
-
-.casestudy .card:hover img {
+.card img {
+  width: 100%;
   max-width: unset;
-  width: 340px;
-  background-color: #fff;
-  border: 2px solid black;
+  position: relative;
+  /*left: 50%;
+  transform: translate(-50%, 0);*/
+  transition: 0.5s width;
 }
 
 .colours {
-  padding-top: 5px;
-}
-
-.colours span {
-  padding: 20px 5px 5px 5px;
-  margin: 10px;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: bold;
-  display: inline-block;
-  color: #fff;
-  border: 2px solid #000;
+  margin: 30px 0;
+}
+.colours span {
+  padding: 10px;
+  margin-right: 10px;
 }
 
-.images {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.card:hover {
+  border-color: transparent;
+  overflow: visible;
 }
-
-.images .card {
-  margin: 15px 0;
-  -ms-flex: 0 0 200px;
-  -webkit-box-flex: 0;
-          flex: 0 0 200px;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  display: inline-block;
-  cursor: pointer;
-  background: #fff;
-  border: 2px solid #000;
-  opacity: 0;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
-  -webkit-transition: 1s opacity, 0.5s border-color, 1s -webkit-transform;
-  transition: 1s opacity, 0.5s border-color, 1s -webkit-transform;
-  transition: 1s opacity, 1s transform, 0.5s border-color;
-  transition: 1s opacity, 1s transform, 0.5s border-color, 1s -webkit-transform;
-  position: relative;
-}
-
-.images .card.visible {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.card:hover img {
+  width: 140%;
+  box-shadow: 0 0 15px #000;
 }
 
 .final img {
-  border: 2px solid #000;
+  margin-bottom: 20px;
 }
 
-#projtitle .left,
-#projtitle p {
-  -webkit-animation: opacityanim 1.3s;
-          animation: opacityanim 1.3s;
-}
-
-.border {
-  -webkit-animation: opacityanim 0.3s;
-          animation: opacityanim 0.3s;
-}
-
-.border .container {
-  -webkit-animation: opacityanim 1.3s;
-          animation: opacityanim 1.3s;
-}
-
-@media screen and (max-width: 1100px) {
-  .border {
-    margin: 5%;
-    padding-top: 20px;
+@media screen and (min-width: 901px) {
+  .overflow .inner {
+    position: relative;
   }
-  .border .container {
-    padding-left: 5%;
-    padding-right: 5%;
+
+  .overflow .summary .right {
+    position: absolute;
+    right: 0;
+  }
+
+  .overflow .final {
+    max-width: 70%;
   }
 }
 
 @media screen and (max-width: 900px) {
-  #projtitle .left {
+  #projtitle svg {
+    height: 110%;
+  }
+  .summary .inner,
+  .summary.img100 {
+    width: 90%;
     max-width: 100%;
   }
-  #projtitle .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: unset;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  #projtitle .right {
-    position: relative;
-    -ms-flex-item-align: unset;
-        -ms-grid-row-align: unset;
-        align-self: unset;
-    padding-left: 0;
-    padding-bottom: 15px;
-  }
-  #projtitle .right h1,
-  #projtitle .right p {
-    padding-left: 0;
-  }
-  #projtitle h1::after {
+  .summary .left,
+  .summary .right {
     width: 100%;
-    left: 0;
+    margin: 0;
+  }
+  .summary p,
+  .summary ul,
+  .summary ol {
+    padding-left: 0;
+  }
+
+  .card {
+    max-height: 460px;
+    overflow: hidden;
+  }
+  .card:hover img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #projtitle {
+    margin-top: 80px;
+  }
+  #projtitle svg {
+    width: 330px;
+    max-width: 52%;
+    height: auto;
+    top: -80px;
+    transform: scale(-1, 1);
     right: unset;
+    left: -8%;
   }
-  .colours {
+  #projtitle .flex {
+    align-items: center;
     text-align: center;
+    flex-direction: column;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .border .container,
   #projtitle .left,
-  #projtitle p {
-    -webkit-animation: opacityanim 2s;
-            animation: opacityanim 2s;
-  }
   #projtitle .right {
-    padding-bottom: 30px;
+    padding-left: 0;
+    margin: 0 20px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  section .container {
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  #projtitle .border > div,
+  #projtitle .border > div div {
     width: 100%;
-  }
-  #projtitle .container,
-  .casestudy {
-    width: 830px;
-    margin: 0 auto;
     max-width: 100%;
   }
-  #projtitle .container {
-    padding: 0;
-  }
 }
-/*# sourceMappingURL=project.css.map */
