@@ -8,58 +8,128 @@
     <title>Nik (Kemdi) . Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
-<body class="intro y mandatory-scroll-snapping">
-    <nav class="container">
+<body>
+
+    <nav>
+        <div class="burger">
+            <img src="../img/burger.svg" alt="">
+        </div>
         <ul>
-            <li onclick="topFunction()" id="mybtn">HOME</li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LINKEDIN</a></li>
+            <li onclick="topFunction()" id="mybtn" class="active"><a href="#">home</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="https://github.com/nikxkj" target="_blank">github</a></li>
+            <li><a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">linkedin</a></li>
         </ul>
     </nav>
 
-    <p class="bkgtext">design<br>
-        design<br>
-        design
-    </p>
+    <section id="home">
 
-    <section id="main">
+        <svg class="hero-img" xmlns="http://www.w3.org/2000/svg" width="426.553" height="554.663"
+            viewBox="0 0 426.553 554.663">
+            <g id="Group_8" data-name="Group 8" transform="translate(-940.857 -171.203)">
+                <path id="Path"
+                    d="M9187.327,475.481c-11.849,5.623-46.981,24.813-38.751,37.5s45.172-5.451,52.513-9.042,13.185-5.6,20.466-8.47,6.951-1.7,13.5-4.342,7.638-4.057,12.7-6.211,7.953-2.215,7.953-2.215,12.163,8.345,15.023,10.543,16.285,11.051,27.987,23.79,13.039,19.814,28.3,31.9,35.435,21,35.435,21,22.235,26.748,40.386,67.881,36.419,87.867,36.419,87.867"
+                    transform="translate(-8165)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="Path-2" data-name="Path"
+                    d="M9131.666,412.294s-19.437-.422-19.379,12.147,19.379,13.395,19.379,13.395"
+                    transform="translate(-8165)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="Path-3" data-name="Path" d="M9127.15,354.518s-21.773,2.533-20.754,16.79,20.754,13,20.754,13"
+                    transform="translate(-8165)" fill="none" stroke="#fff" stroke-width="1" />
+                <g class="deviceimg" data-name="Group 7" transform="translate(131.152 46.79) rotate(-3)">
+                    <rect class="frame" id="frame" width="152" height="301" rx="18" transform="translate(809.5 175.5)"
+                        stroke="#fff" stroke-width="1" />
+                    <rect class="frame" id="frame-2" data-name="frame" width="142" height="291" rx="14"
+                        transform="translate(814.5 180.5)" fill="none" stroke="#fff" stroke-width="1" />
+                    <rect id="hover" width="125" height="77" rx="5" transform="translate(823 202.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <rect id="hover-2" data-name="hover" width="60" height="60" rx="5" transform="translate(823 299.5)"
+                        fill="none" stroke="#fff" stroke-width="1" />
+                    <rect id="hover-3" data-name="hover" width="125" height="37" rx="5" transform="translate(823 419.5)"
+                        fill="none" stroke="#fff" stroke-width="1" />
+                    <path id="Rectangle" d="M0,0H51a0,0,0,0,1,0,0V2a8,8,0,0,1-8,8H8A8,8,0,0,1,0,2V0A0,0,0,0,1,0,0Z"
+                        transform="translate(860 180.5)" fill="none" stroke="#fff" stroke-width="1" />
+                    <line id="hover-4" data-name="hover" x2="53.509" transform="translate(894.991 299.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <line id="hover-5" data-name="hover" x2="53.509" transform="translate(894.991 319.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <line id="hover-6" data-name="hover" x2="53.509" transform="translate(894.991 339.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <line id="hover-7" data-name="hover" x2="53.509" transform="translate(894.991 359.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <line id="hover-8" data-name="hover" x2="125" transform="translate(823.5 379.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                    <line id="hover-9" data-name="hover" x2="125" transform="translate(823.5 399.5)" fill="none"
+                        stroke="#fff" stroke-width="1" />
+                </g>
+                <path id="Path-4" data-name="Path"
+                    d="M9532,582.042s-61.532-88.549-75.948-106.191-38.59-39.084-46.967-49.07-37.395-50.427-47-61.2-19.893-14.5-24.772-18.661-5.317-6.522-14.209-13.452-14.444-8.546-21.357-14.268-16.443-15.939-23.048-22.094-7.025-7.587-7.025-7.587l1.564,31.145a79.471,79.471,0,0,0-12.512-4.56c-5.812-1.414-12.7-.442-21.271-1.546s-21.171-6.522-28.354-7.938-20.652-1.458-21.1,8.543,7.9,16.307,19.446,25.237,26.754,10.486,26.754,10.486,6.269,6.912,12.272,10.473a27.435,27.435,0,0,0,11.743,3.771,104.383,104.383,0,0,0,10.746,11.655c5.736,5.193,11.044,7.429,12.2,9.118a34.4,34.4,0,0,1,2.249,4.017,11.333,11.333,0,0,0-7.24,13.175c1.856,10.164,5.663,13.18,12.92,26.2s15.1,34.823,24.877,54.03,14.234,22.8,14.234,22.8"
+                    transform="translate(-8165)" stroke="#fff" stroke-width="1" />
+                <path id="Path-5" data-name="Path"
+                    d="M9432.393,390.011a6.326,6.326,0,0,0,4.663,2.762,22.659,22.659,0,0,0,7.067-1.186"
+                    transform="translate(-8312)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="Path-6" data-name="Path" d="M9502.313,551.1s14.086-31,24.812-41.78"
+                    transform="translate(-8312)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="Path-7" data-name="Path" d="M9509.388,569.309s7.872-18.6,15.475-28.651"
+                    transform="translate(-8312)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="Path-8" data-name="Path" d="M9403.3,483.135a10.539,10.539,0,0,1-3.485-6.062"
+                    transform="translate(-8312)" fill="none" stroke="#fff" stroke-width="1" />
+                <path id="coverup" d="M9431.225,385.963l3.527,6.293,5.524,26.929-9.052,5.241-5.434-13.6-1.439-22.585Z"
+                    transform="translate(-8312 3.167)" />
+                <path id="Path-9" data-name="Path" d="M9420.206-761.477s28.433,13.912,48.438,19.222"
+                    transform="translate(-8312 1082)" fill="none" stroke="#fff" stroke-width="1" />
+            </g>
+        </svg>
+
+
 
         <div class="container">
 
-            <p>
-                I’m a multidisciplinary artist with a strong focus on UI/UX design - based in Toronto, Canada.
-            </p>
-            <h1><span>Nik </span> <span>Ikejiani</span></h1>
-            <p>
-                Currently a designer @ CI Financial
-            </p>
-            <div class="clickthis">
-                <a href="#projects"></a>
+            <div class="eyebrow">
+                <p>Web designer and developer</p>
+                <p>Currently At ci financial</p>
+                <p>Prev. marketing automation canada</p>
             </div>
 
+            <div class="heading">
+                <h1>NIK IKEJIANI</h1>
+            </div>
+
+            <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="47.071" height="58.607" viewBox="0 0 47.071 58.607">
+                    <g id="arrow" transform="translate(-259.464 -947.464)">
+                        <g id="arrow_bkg" data-name="arrow bkg" transform="translate(260.5 954)" fill="#fff"
+                            stroke="#fff" stroke-width="1">
+                            <rect width="45" height="45" stroke="none" />
+                            <rect x="0.5" y="0.5" width="44" height="44" fill="none" />
+                        </g>
+                        <path id="chevron" d="M501,887.418l20,20,20-20" transform="translate(-238 91.582)" fill="none"
+                            stroke="#000" stroke-width="10" />
+                        <path id="chevron-2" data-name="chevron" d="M501,887.418l20,20,20-20"
+                            transform="translate(-238 63.582)" fill="none" stroke="#000" stroke-width="10" />
+                    </g>
+                </svg>
+                <span>View my projects</span>
+            </div>
         </div>
 
     </section>
 
     <section id="projects">
 
-        <div class="navbkg"></div>
-
         <div class="container">
 
-            <div class="project">
-                <div class="first image visible">
-                    <div class="left">
-                        <img src="img/img-home-ciprestige.jpg" alt="">
-                    </div>
-                    <div class="right">
-                        <h2>CI Prestige</h2>
+            <div class="row">
+
+                <div class="image" style="background-image: url('img/img-home-ciprestige.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/ciprestige.html"></a>
+                    <div class="inner">
+                        <h2>CI PRESTIGE</h2>
                         <p>
                             I was tasked with bringing an internal app to the modern age. It had been several years
                             since the last update. As you can probably tell, it was an exhaustive project with
@@ -67,36 +137,36 @@
                             project.
                         </p>
                         <div class="btn">
-                            <a href="project/ciprestige.html">VIEW CASE STUDY</a>
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project">
-                <div class="image">
-                    <div class="left">
-                        <img src="img/img-home-ci-gam.jpg" alt="">
-                    </div>
-                    <div class="right">
+                <div class="image" style="background-image: url('img/img-home-ci-gam.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/cifundcommentary.html"></a>
+                    <div class="inner">
                         <h2>CI GAM Fund Commentary</h2>
                         <p>
                             Modernizing the fund commentary page for GAM. In addition to redesigning the page and making
                             it appear more modern, I also designed the accompanying AEM component.
                         </p>
                         <div class="btn">
-                            <a href="project/cifundcommentary.html">VIEW CASE STUDY</a>
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="project">
-                <div class="image">
-                    <div class="left">
-                        <img src="img/img-home-cidi.jpg" alt="">
-                    </div>
-                    <div class="right">
+            <div class="row">
+
+                <div class="image" style="background-image: url('img/img-home-cidi.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/cidirebrand.html"></a>
+                    <div class="inner">
                         <h2>CI Direct Investing Rebrand</h2>
                         <p>
                             Wealthbar’s integration into CI included the integration of CI Direct Investment (prev.
@@ -106,78 +176,71 @@
                             the aim of the overall experience.
                         </p>
                         <div class="btn">
-                            <a href="project/cidirebrand.html">VIEW CASE STUDY</a>
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project">
-                <div class="image">
-                    <div class="left">
-                        <img src="img/img-home-mitto.jpg" alt="">
-                    </div>
-                    <div class="right">
+                <div class="image" style="background-image: url('img/img-home-mitto.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/mitto.html"></a>
+                    <div class="inner">
                         <h2>Mitto</h2>
                         <p>
                             I was tasked with designing and enhancing the experience of multiple pages on the Mitto
                             site.
                         </p>
                         <div class="btn">
-                            <a href="project/mitto.html">VIEW CASE STUDY</a>
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="project">
-                <div class="image">
-                    <div class="left">
-                        <img src="img/img-home-booktopia.jpg" alt="">
-                    </div>
-                    <div class="right">
+            <div class="row">
+
+                <div class="image" style="background-image: url('img/img-home-booktopia.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/booktopia.html"></a>
+                    <div class="inner">
                         <h2>Booktopia (Personal Project)</h2>
                         <p>
                             Booktopia is an app that helps people easily find and save books. Inspired by justwatch.com
                             where you can find where to stream or buy tv shows and movies. The colour theme was
                             monochromatic, welcoming and vibrant.
                         </p>
-                        <div class="btn"><a href="project/booktopia.html">VIEW CASE STUDY</a></div>
+                        <div class="btn">
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="project">
-                <div class="image">
-                    <div class="left">
-                        <img src="img/img-home-illustration.jpg" alt="">
-                    </div>
-                    <div class="right">
+                <div class="image" style="background-image: url('img/img-home-illustration.jpg');">
+                    <div class="overlay"></div>
+                    <a href="project/illustrations.html"></a>
+                    <div class="inner">
                         <h2>Illustrations</h2>
-                        <p>I draw sometimes :)</p>
-                        <div class="btn"><a href="project/illustrations.html">VIEW ILLUSTRATIONS</a></div>
+                        <p>
+                            I draw sometimes :)
+                        </p>
+                        <div class="btn">
+                            <span></span>
+                            <span>VIEW PROJECT SUMMARY</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
-
-            <div class="homeheight"></div>
-
 
         </div>
+
     </section>
 
     <script src="js/script.js"></script>
-
-    <script>//adds active class to fix the lack of gallery-view
-        document.querySelectorAll("#projects .container")[0].addEventListener("mouseover", function (e) {
-            const parent = e.target.parentElement;
-            document.getElementsByTagName("html")[0].classList.add("active");
-        });
-
-        document.getElementById("main").addEventListener("mouseout", function (e) {
-            document.getElementsByTagName("html")[0].classList.remove("active");
-        });
-    </script>
 
 </body>
 
