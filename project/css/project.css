@@ -118,11 +118,11 @@ h2 {
 }
 .summary .left {
   width: 70%;
-  margin-right: 4%;
+  margin-right: 9%;
   display: inline-block;
 }
 .summary .right {
-  width: 25%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   margin-top: 40px;
