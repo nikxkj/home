@@ -127,6 +127,9 @@ h2 {
   vertical-align: top;
   margin-top: 40px;
 }
+.summary .left img {
+  margin-top: 15px;
+}
 
 .card {
   background: #000;
@@ -201,9 +204,6 @@ h2 {
   .summary ul,
   .summary ol {
     padding-left: 0;
-  }
-  .summary .left img {
-    margin-top: 15px;
   }
 
   .colours {
