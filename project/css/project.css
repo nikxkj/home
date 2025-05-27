@@ -202,6 +202,9 @@ h2 {
   .summary ol {
     padding-left: 0;
   }
+  .summary .left img {
+    margin-top: 15px;
+  }
 
   .card {
     max-height: 460px;
