@@ -206,6 +206,12 @@ h2 {
     margin-top: 15px;
   }
 
+  .colours span {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   .card {
     max-height: 460px;
     overflow: hidden;
