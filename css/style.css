@@ -228,7 +228,8 @@ nav li.active a:before {
 }
 
 .deviceimg line,
-.deviceimg rect {
+.deviceimg rect,
+.deviceimg path {
   opacity: 0;
 }
 
@@ -241,7 +242,8 @@ nav li.active a:before {
 }
 
 .hero-img:hover line,
-.hero-img:hover rect {
+.hero-img:hover rect,
+.hero-img:hover path {
   opacity: 1;
 }
 
