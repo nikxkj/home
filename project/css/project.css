@@ -65,6 +65,15 @@ section .container {
   z-index: 5;
   top: 5%;
   height: 134%;
+  transition: 0.3s margin-top;
+}
+#projtitle svg:hover {
+  margin-top: -10px;
+}
+#projtitle svg:hover line,
+#projtitle svg:hover rect,
+#projtitle svg:hover path {
+  opacity: 1;
 }
 
 #projtitle .flex {
@@ -236,6 +245,12 @@ h2 {
     transform: scale(-1, 1);
     right: unset;
     left: -8%;
+  }
+  #projtitle svg:hover {
+    margin-top: 0;
+  }
+  #projtitle svg:hover .deviceimg {
+    opacity: 0;
   }
   #projtitle .flex {
     align-items: center;
