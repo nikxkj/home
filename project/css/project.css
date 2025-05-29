@@ -180,6 +180,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 791px) {
+  #projtitle .left img {
+    min-width: 210px;
+  }
+  #projtitle .right {
+    z-index: 6;
+  }
+}
+
 @media screen and (min-width: 901px) {
   .overflow .inner {
     position: relative;
