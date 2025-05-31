@@ -204,10 +204,13 @@ h2 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   #projtitle svg {
     height: 110%;
   }
+}
+
+@media screen and (max-width: 900px) {
   .summary .inner,
   .summary.img100 {
     width: 90%;
@@ -236,6 +239,10 @@ h2 {
   .card {
     max-height: 460px;
     overflow: hidden;
+  }
+  .card:hover {
+    z-index: 3;
+    max-height: unset;
   }
   .card:hover img {
     width: 100%;
