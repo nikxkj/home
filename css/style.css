@@ -32,7 +32,6 @@ h3 {
   font-weight: 800;
   font-family: "Manrope", sans-serif;
 }
-
 h1 span,
 h2 span,
 h3 span {
@@ -48,7 +47,6 @@ h1 {
   position: relative;
   text-transform: uppercase;
 }
-
 h1::before {
   content: "";
   display: inline;
@@ -57,8 +55,8 @@ h1::before {
   background-color: #fff;
   z-index: -1;
   /*height: 60%;
-    top: 50%;
-    transform: translate(0, -50%);*/
+  top: 50%;
+  transform: translate(0, -50%);*/
   height: 77%;
   top: 0;
   left: 0;
@@ -78,11 +76,10 @@ h2:before {
   display: inline;
   position: absolute;
   width: 100%;
-  background-color: #fff;
-  /*
-  top: 50%;
-  height: 60%;
-  transform: translate(0, -50%);*/
+  background-color: #fff; /*
+top: 50%;
+height: 60%;
+transform: translate(0, -50%);*/
   z-index: -1;
   height: 77%;
   top: 0;
@@ -146,19 +143,16 @@ section .arrow {
       -ms-flex-align: center;
           align-items: center;
 }
-
 section .arrow a {
   position: absolute;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
-
 section .arrow svg {
   width: 32px;
   height: auto;
 }
-
 section .arrow span {
   margin-left: 10px;
   opacity: 0;
@@ -167,12 +161,10 @@ section .arrow span {
   pointer-events: none;
   white-space: nowrap;
 }
-
 section .arrow:hover span {
   opacity: 1;
   width: unset;
 }
-
 section#home .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,13 +202,11 @@ nav {
   bottom: 40px;
   right: 5%;
 }
-
 nav a {
   font-size: 0.8rem;
   display: block;
   padding-top: 15px;
 }
-
 nav li:first-child a {
   padding: 0;
 }
@@ -241,7 +231,6 @@ nav li.active a:before {
 .deviceimg path {
   opacity: 0;
 }
-
 .deviceimg .frame {
   opacity: 1;
 }
@@ -249,7 +238,6 @@ nav li.active a:before {
 .hero-img:hover {
   margin-top: -15px;
 }
-
 .hero-img:hover line,
 .hero-img:hover rect,
 .hero-img:hover path {
@@ -292,7 +280,6 @@ nav li.active a:before {
   border: 1px solid #fff;
   background-color: #e9eafe;
 }
-
 .image .overlay {
   position: absolute;
   top: 0;
@@ -304,14 +291,12 @@ nav li.active a:before {
   -webkit-transition: 0.5s opacity;
   transition: 0.5s opacity;
 }
-
 .image .inner {
   opacity: 0;
   -webkit-transition: 0.5s opacity;
   transition: 0.5s opacity;
   z-index: 2;
 }
-
 .image a {
   opacity: 0;
   display: block;
@@ -322,7 +307,6 @@ nav li.active a:before {
   left: 0;
   z-index: 4;
 }
-
 .image p {
   margin: 20px 0;
   display: none;
@@ -331,16 +315,13 @@ nav li.active a:before {
 .image:hover {
   width: 85%;
 }
-
 .image:hover .overlay {
   background-color: #000;
   opacity: 1;
 }
-
 .image:hover .inner {
   opacity: 1;
 }
-
 .image:hover p {
   display: block;
 }
@@ -351,20 +332,18 @@ nav li.active a:before {
   width: 145px;
   text-transform: uppercase;
 }
-
 .btn span:nth-child(1) {
   vertical-align: middle;
   font-size: 1.8rem;
   /*
-    font-weight: 300;
-    margin-left: -3px;*/
+  font-weight: 300;
+  margin-left: -3px;*/
   margin-left: -2px;
   border: 1px solid;
   border-right: 0;
   padding: 0 5px;
   color: #fff;
 }
-
 .btn span:nth-child(2),
 .btn a {
   vertical-align: middle;
@@ -385,6 +364,17 @@ nav,
   font-family: "Manrope", sans-serif;
 }
 
+#home svg#face {
+  z-index: 2;
+  position: absolute;
+  max-width: 95%;
+}
+#home svg#eyes {
+  z-index: 1;
+  position: absolute;
+  max-width: 95%;
+}
+
 @media screen and (min-width: 1300px) {
   .container {
     max-width: 1500px;
@@ -398,7 +388,11 @@ nav,
     height: 525px;
   }
 }
-
+@media screen and (min-width: 801px) {
+  #main nav {
+    width: 98px;
+  }
+}
 .burger {
   display: none;
   width: 30px;
@@ -408,7 +402,6 @@ nav,
   transition: 0.3s width;
   background-color: #000;
 }
-
 .burger img {
   width: 100%;
   height: 100%;
@@ -502,5 +495,4 @@ nav,
   .image p {
     display: block;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
