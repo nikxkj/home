@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-family: "Bytesized", sans-serif;
+  font-family: "Funnel Display", sans-serif;
   color: #E85B5B;
   line-height: 1;
 }
@@ -754,10 +754,11 @@ html {
 }
 @media screen and (max-width: 920px) {
   h1 {
-    line-height: 0.7;
+    line-height: 0.5;
+    padding-bottom: 5px;
   }
   .projectview h1, .illselected h1, .illustrationview h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .container {
     padding-top: 20%;
