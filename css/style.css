@@ -906,4 +906,9 @@ html {
   .illselected .tiles .default, .illustrationview .tiles .default {
     padding-bottom: 25vh;
   }
+}
+@media screen and (max-width: 600px) {
+  .tiles {
+    max-height: 50vh;
+  }
 }/*# sourceMappingURL=style.css.map */
