@@ -911,4 +911,14 @@ html {
   .tiles {
     max-height: 50vh;
   }
+}
+.projectview .tile, .projselected .tile, .illustrationview .tile, .illselected.illustrationview .tile, .illselected .tile {
+  border: 4px solid #e85b5b;
+}
+
+@media screen and (min-width: 1165px) {
+  .projectview .tile, .projselected .tile, .illustrationview .tile, .illselected.illustrationview .tile, .illselected .tile {
+    border: 4px solid #e85b5b;
+    margin-right: 2%;
+  }
 }/*# sourceMappingURL=style.css.map */
