@@ -1,224 +1,914 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bytesized&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Funnel+Display:wght@300..800&display=swap"
-        rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
+html,
+body {
+  background-color: #1b1b1b;
+  color: #f3f3f3;
+  font-family: "Funnel Display", sans-serif;
+}
 
-<body class="">
+body {
+  height: 100vh;
+}
 
-    <section class="headline">
-        <div class="container">
-            <h1>NIK IKEJIANI (KEMDI)</h1>
-            <p>
-                Multidisciplinary artist based in Toronto, Canada with a strong focus in web design. Currently a UI/UX
-                Designer @CI Financial
-            </p>
-        </div>
-    </section>
+h1 {
+  font-family: "Funnel Display", sans-serif;
+  color: #E85B5B;
+  line-height: 1;
+}
 
-    <div id="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
+h1, nav {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
 
-    <nav>
-        <ul>
-            <li class="active"><a href="">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#illustrations">ILLUSTRATION</a></li>
-            <li><a href="https://github.com/nikxkj" target="_blank">GITHUB</a></li>
-            <li><a href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LINKEDIN</a></li>
-        </ul>
-    </nav>
+h2 {
+  min-height: 1.8rem;
+  margin-bottom: 15px;
+  position: relative;
+  font-weight: 400;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 130%;
+  margin-left: -30%;
+  background-color: #f3f3f3;
+}
 
-    <div class="hero-img">
-        <svg xmlns="http://www.w3.org/2000/svg" width="381.968" height="380.222" viewBox="0 0 381.968 380.222">
-            <g id="Group_6" data-name="Group 6" transform="translate(-1617.724 -571.008)">
-                <g id="Group_5" data-name="Group 5" transform="translate(1654.955 618.241)">
-                    <path id="Path_30" data-name="Path 30"
-                        d="M4374.417,9748.7s-19.706,10.72-14.166,22.642,24.936,4.57,24.936,4.57"
-                        transform="translate(-4315.37 -9556.777)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_31" data-name="Path 31"
-                        d="M4437.08,9904.673s-20.393,16.168-13.143,27.8,24.523,0,24.523,0"
-                        transform="translate(-4356.179 -9656.105)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_35" data-name="Path 35"
-                        d="M4543.3,9547.336s17.13,15,30.307,20.659,108.594,40.192,108.594,40.192l-84.34,105.192-109.655-115.35Z"
-                        transform="translate(-4397.639 -9427.202)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_26" data-name="Path 26"
-                        d="M4707,9619.3s-7.542-4.627-9.445-6.025-4.34.708-8.166,0-9.448-4-9.448-4-10.894,6.912-35.446,5.977-24.9-17.511-24.9-17.511,6.6-6.293,12.789-8.813a147.394,147.394,0,0,1,16.384-4.989,50.666,50.666,0,0,0,11.586-5.708c5.482-3.752,12.632-11.848,21.156-12.659s30.813,5.774,42.879,7.854,27.171-.639,40.022,9.861,26.984,57.571,33.863,66.954,25.606,21.45,25.606,21.45-28.814,32.153-39.648,50.552-28.957,46.359-28.957,46.359a31.379,31.379,0,0,0-10.976-7.229c-6.925-2.719-29.5-6.628-43.926-9.034s-36.249-10.777-36.249-10.777-5.975.228-8.342,0-5.047-.528-5.047-.528a15.293,15.293,0,0,0,2.29,5.043c1.842,2.74,5.484,13.893,1.14,20.521s-13.2,1.075-17.884-3.122-16.169-18.144-16.169-18.144"
-                        transform="translate(-4482.193 -9438.895)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_22" data-name="Path 22"
-                        d="M17.829,9.094,89.907,0c9.847,0,17.829,5.839,17.829,13.042V279.42c0,7.2-7.982,13.042-17.829,13.042l-72.078,9.094C7.982,301.555,0,295.716,0,288.514V22.135C0,14.933,7.982,9.094,17.829,9.094Z"
-                        transform="translate(0 38.61) rotate(-21)" fill="#1b1b1b" opacity="0.996" />
-                    <path id="Path_25" data-name="Path 25"
-                        d="M15.3,8.36,77.1,0C85.545,0,92.39,5.368,92.39,11.989l-.007,242.894c0,6.621-6.845,11.989-15.288,11.989l-61.806,8.36C6.845,275.232,0,269.864,0,263.242L.007,20.349C.007,13.727,6.852,8.36,15.3,8.36Z"
-                        transform="translate(16.434 45.57) rotate(-21)" fill="#e85b5b" />
-                    <path id="Path_27" data-name="Path 27"
-                        d="M4707,9619.3s-7.542-4.627-9.445-6.025-4.34.708-8.166,0-9.448-4-9.448-4-10.894,6.912-35.446,5.977-24.9-17.511-24.9-17.511,6.6-6.293,12.789-8.813a147.394,147.394,0,0,1,16.384-4.989,50.666,50.666,0,0,0,11.586-5.708c5.482-3.752,12.632-11.848,21.156-12.659s30.813,5.774,42.879,7.854,27.171-.639,40.022,9.861,26.984,57.571,33.863,66.954,25.606,21.45,25.606,21.45-28.814,32.153-39.648,50.552-28.957,46.359-28.957,46.359a31.379,31.379,0,0,0-10.976-7.229"
-                        transform="translate(-4482.193 -9438.895)" fill="#fff" stroke="#1b1b1b" stroke-width="4"
-                        opacity="0.997" />
-                    <path id="Path_29" data-name="Path 29" d="M4711.66,10021.862s-6.556,6.66-5.018,12.582"
-                        transform="translate(-4538.066 -9732.238)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_32" data-name="Path 32"
-                        d="M4985.2,10028.361s8.02-9.219,11.478-15.25,4.576-14.792,10.891-23.02"
-                        transform="translate(-4717.489 -9712.148)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_33" data-name="Path 33" d="M4766.411,10016.036a100.033,100.033,0,0,0,4.477-30.79"
-                        transform="translate(-4576.683 -9711.451)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_34" data-name="Path 34"
-                        d="M4852.587,9797.971c-18.729-.29-30.9-21.422-37.723-29.463s-26.2-24.145-23.488-53.391"
-                        transform="translate(-4592.583 -9535.182)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_36" data-name="Path 36" d="M5027.937,9914.371s23.5-11.061,35.45-27.919"
-                        transform="translate(-4744.995 -9645.448)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                </g>
-                <g id="sparks" transform="translate(1617.896 571.787)">
-                    <path id="sparks_5" data-name="sparks 5" d="M5790.639,6296.459l11.5-14.058"
-                        transform="translate(-5635.803 -6262.26)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_4" data-name="sparks 4" d="M5718.552,6276.189l-18.862-44.577"
-                        transform="translate(-5627.555 -6231.612)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_3" data-name="sparks 3" d="M5615.312,6240.48l-15.79-11.094"
-                        transform="translate(-5591.164 -6157.106)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_2" data-name="sparks 2" d="M5626.394,6391.571l-26.774,2.318"
-                        transform="translate(-5599.62 -6239.442)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_1" data-name="sparks 1" d="M5663.512,6485.567l-11.032,4.207"
-                        transform="translate(-5597.747 -6278.911)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_6" data-name="sparks 6" d="M5803.235,6384.67l10.958-8.784"
-                        transform="translate(-5623.945 -6285.463)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="Path_38" data-name="Path 38" d="M1768.5,670.937l29.033-6.443"
-                        transform="translate(-1578.251 -522.343)" fill="none" stroke="#fff" stroke-width="4" />
-                </g>
-            </g>
-        </svg>
-    </div>
+p {
+  line-height: 1.5;
+  margin: 15px 0;
+}
 
-    <div id="home"></div>
+ul li, ol li {
+  list-style: none;
+}
 
-    <section class="frame1" id="projects">
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-        <div class="wrapper" id="headings">
-            <h2>
-                <span class="projects">My approach to UI/UX design</span>
-                <span class="illustrations">I draw sometimes</span>
-            </h2>
-        </div>
+section {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section p {
+  margin: 15px 0;
+}
 
-        <div class="">
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 60px 5%;
+}
 
-            <div id="details">
-                <div id="viewprojects"></div>
-                <div class="projects wrapper">
-                    <p>
-                        Be it a revamp or a completely new project, I tend to follow the same steps: research,
-                        documentations, drafts, and design reviews.
-                    </p>
-                    <p>
-                        A completely new project usually means a new brand guideline and new direction. In cases like
-                        that, there’s a lot of initial spitballing between the stakeholders and me. I’m able to build a
-                        direction based on the demographic for said product and any other consumer data that is
-                        provided. From there, I research competitors to note what the growing trend is and if that’s
-                        something that can be implemented to the project. Eventually, multiple images are sourced and
-                        different colour schemes are worked through. From there I work on mockups and build out the
-                        prototypes. My favourite tool is Adobe XD, although I also use Figma, depending on if the
-                        stakeholders/customer has a preference.
-                    </p>
-                    <p>
-                        Flowcharts are also an important part of the process. It helps ensure that the user experience
-                        flows properly and that all the pages contained in the site/app can easily be navigated to.
-                    </p>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/prestige-flowchart.png" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-onboarding-flowchart.png" alt="">
-                    </div>
-                    <p>
-                        Consistency with fonts, icons, CTAs is another important aspect of a site or an app's
-                        branding. I utilize the features on the various design tools (Adobe XD, Figma, Sketch) to ensure
-                        that I'm using consistent fonts styling and colours throughout. I always work out the colour
-                        palette and overall theme branding before I start a high fidelity design. Although most times, I
-                        provide multiple mockups where I use the colours in different ways
-                    </p>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-palette.png" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-icons.png" alt="">
-                    </div>
-                    <p>
-                        For a simple revamp, I’m usually working with existing brand guidelines and with a tighter
-                        timeframe. I’m quicker with this. Multiple drafts aren’t usually required. Although I always
-                        make sure to provide two hi-fi mockups. After some feedback and remarks from the stakeholders, I
-                        narrow it down to one design and refine as needed.
-                    </p>
-                </div>
+.headline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.headline .container {
+  -webkit-transition: 0.5s padding;
+  transition: 0.5s padding;
+}
 
-                <div id="illustrations"></div>
+#burger {
+  display: none;
+}
 
-                <div class="illustrations wrapper">
-                    <p>
-                        Here are some of my most recent works
-                    </p>
-                    <div id="viewillustrations"></div>
-                </div>
+nav {
+  font-family: "Bytesized", sans-serif;
+  position: fixed;
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  width: 20%;
+  z-index: 100000;
+}
+nav li {
+  margin: 30px 0;
+}
+nav li.active {
+  color: #E85B5B;
+}
+nav li.active a::before {
+  content: "//";
+  display: inline-block;
+}
+nav li a:hover {
+  color: #E85B5B;
+}
 
-                <div id="spacing"></div>
-            </div>
+svg {
+  position: fixed;
+  z-index: 110;
+  right: -6%;
+  width: 20%;
+  height: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+}
+svg #sparks {
+  opacity: 0;
+}
 
-        </div>
+#home {
+  height: 100vh;
+  -webkit-transition: 0.4s height;
+  transition: 0.4s height;
+}
 
-    </section>
+#details {
+  min-height: 100vh;
+}
 
-    <section class="frame2">
-        <div class="tiles">
-            <div class="row wrapper">
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/normal-people.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/peaches.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/couple.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/boat.jpg" alt="">
-                </div>
-            </div>
+.wrapper {
+  padding-left: 25%;
+  padding-right: 15%;
+}
 
-            <div class="row default wrapper">
-                <div class="tile">
-                    <p>My process</p><a class="intro" href="#projects"></a>
-                    <img class="projects" src="https://nikxkj.github.io/home/img/img-home-ciprestige.jpg" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/glasses.png" alt="">
-                </div>
-                <div class="tile">
-                    <p>Other art stuff</p><a class="intro" href="#illustrations"></a>
-                    <img class="projects" src="https://nikxkj.github.io/home/img/img-home-ci-gam.jpg" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/portrait.png" alt="">
-                </div>
-                <div class="tile projects">
-                    <img class="projects" src="https://nikxkj.github.io/home/project/img/booktopia-0.png" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/product-mockup.jpg" alt="">
-                </div>
-                <div class="tile projects">
-                    <img class="projects" src="https://nikxkj.github.io/home/project/img/mitto-0.png" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/self-portrait.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+#headings {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-top: 130px;
+  top: 0;
+  background: #1b1b1b;
+}
 
-    <script src="js/script.js"></script>
+.image {
+  text-align: center;
+  vertical-align: bottom;
+  margin: 10px 0;
+  background-color: #fff;
+  position: relative;
+  border: 2px solid #E85B5B;
+}
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
 
-</body>
+#spacing {
+  max-height: 60vh;
+  min-height: 170px;
+}
 
-</html>
+.frame2 {
+  position: fixed;
+  bottom: 50%;
+  -webkit-transform: translateY(65%);
+          transform: translateY(65%);
+  -webkit-transition: 0.5s bottom, 0.5s -webkit-transform;
+  transition: 0.5s bottom, 0.5s -webkit-transform;
+  transition: 0.5s bottom, 0.5s transform;
+  transition: 0.5s bottom, 0.5s transform, 0.5s -webkit-transform;
+}
+
+.tile {
+  width: 170px;
+  height: 170px;
+  background-color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.tile p {
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin: 0;
+  color: #1b1b1b;
+}
+.tile img {
+  height: 100%;
+  width: auto;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.tile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tile:hover {
+  overflow: visible;
+  z-index: 5;
+}
+.tile:hover img {
+  position: relative;
+  z-index: 5;
+  -webkit-transform: translate(-50%, -50%) scale(1.3);
+          transform: translate(-50%, -50%) scale(1.3);
+}
+
+h2 {
+  opacity: 0;
+  pointer-events: none;
+}
+h2 .illustrations {
+  display: block;
+}
+
+.projects {
+  opacity: 0;
+  max-height: 99%;
+  -webkit-transition: 0.5s opacity, 0.5s max-height;
+  transition: 0.5s opacity, 0.5s max-height;
+  max-width: 0;
+}
+
+.illustrations {
+  opacity: 0;
+  max-width: 0;
+  pointer-events: none;
+  max-height: 0;
+}
+
+.tiles {
+  max-height: 60vh;
+  overflow: scroll;
+  min-height: 170px;
+}
+
+.tiles .default {
+  -webkit-transition: 0.5s padding-bottom;
+  transition: 0.5s padding-bottom;
+}
+
+.tile.illustrations {
+  -webkit-transition: 1.5s opacity;
+  transition: 1.5s opacity;
+}
+
+#details .illustrations {
+  opacity: 1;
+  max-height: unset;
+  max-width: unset;
+}
+
+#illustrations {
+  margin-top: 53vh;
+}
+
+.illustrationview #illustrations {
+  margin-top: 10px;
+}
+
+.projects.wrapper {
+  min-height: 100vh;
+}
+
+.projectview, .projselected {
+  /*
+      #details{
+          position: fixed;
+          top: 0;
+          height: 100%;
+          overflow: scroll;
+      }*/
+}
+.projectview .headline .container, .projselected .headline .container {
+  padding: 35px 5%;
+}
+.projectview .headline h1, .projselected .headline h1 {
+  color: #fff;
+  opacity: 0.5;
+}
+.projectview .headline p, .projselected .headline p {
+  display: none;
+}
+.projectview .projects, .projselected .projects {
+  opacity: 1;
+  max-width: unset;
+  max-height: unset;
+}
+.projectview #home, .projselected #home {
+  height: 15px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.projectview #headings h2, .projselected #headings h2 {
+  opacity: 1;
+  pointer-events: unset;
+}
+.projectview .frame2, .projselected .frame2 {
+  bottom: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.projectview .tiles .default, .projselected .tiles .default {
+  padding-bottom: 5%;
+}
+.projectview .tiles, .projselected .tiles {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #1b1b1b));
+  background: linear-gradient(180deg, transparent, #1b1b1b 12%);
+  padding-top: 30px;
+}
+.projectview .tile, .projselected .tile {
+  text-align: center;
+}
+.projectview #details, .projselected #details {
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  overflow: scroll;
+}
+
+.illselected .headline .container {
+  padding: 35px 5%;
+}
+.illselected .headline h1 {
+  color: #fff;
+  opacity: 0.5;
+}
+.illselected .headline p {
+  display: none;
+}
+.illselected .frame2 {
+  bottom: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.illselected h2 {
+  opacity: 1;
+}
+.illselected h2 .projects {
+  display: none;
+}
+.illselected h2 .illustrations {
+  opacity: 1;
+  display: inline-block;
+}
+.illselected .tiles .default {
+  padding-bottom: 18%;
+}
+.illselected .projects {
+  opacity: 1;
+  max-width: unset;
+  max-height: unset;
+}
+.illselected #details {
+  -webkit-animation: none;
+          animation: none;
+}
+.illselected .tile {
+  text-align: center;
+}
+
+.illustrationview .headline .container, .illselected.illustrationview .headline .container {
+  padding: 35px 5%;
+}
+.illustrationview .headline h1, .illselected.illustrationview .headline h1 {
+  color: #fff;
+  opacity: 0.5;
+}
+.illustrationview .headline p, .illselected.illustrationview .headline p {
+  display: none;
+}
+.illustrationview #home, .illselected.illustrationview #home {
+  height: 15px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.illustrationview h2 .projects, .illselected.illustrationview h2 .projects {
+  display: none;
+}
+.illustrationview h2 .illustrations, .illselected.illustrationview h2 .illustrations {
+  display: inline-block;
+  opacity: 1;
+}
+.illustrationview .projects, .illselected.illustrationview .projects {
+  opacity: 0;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+.illustrationview .illustrations, .illselected.illustrationview .illustrations {
+  opacity: 1;
+  max-width: unset;
+  max-height: unset;
+  pointer-events: unset;
+}
+.illustrationview .tile.projects, .illselected.illustrationview .tile.projects {
+  opacity: 1;
+}
+.illustrationview .tile.illustrations, .illselected.illustrationview .tile.illustrations {
+  max-height: 190px;
+}
+.illustrationview .frame2, .illselected.illustrationview .frame2 {
+  bottom: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.illustrationview .tiles .default, .illselected.illustrationview .tiles .default {
+  padding-bottom: 18%;
+}
+.illustrationview .tiles, .illselected.illustrationview .tiles {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #1b1b1b));
+  background: linear-gradient(180deg, transparent, #1b1b1b 12%);
+  padding-top: 30px;
+}
+.illustrationview #details, .illselected.illustrationview #details {
+  -webkit-animation: none;
+          animation: none;
+}
+.illustrationview img.projects, .illselected.illustrationview img.projects {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: block;
+}
+.illustrationview .tile, .illselected.illustrationview .tile {
+  text-align: center;
+}
+
+.illselected.projectview h2 {
+  opacity: 1;
+}
+.illselected.projectview h2 .projects {
+  display: inline-block;
+  opacity: 1;
+}
+.illselected.projectview h2 .illustrations {
+  display: none;
+  opacity: 0;
+}
+.illselected.projectview img.projects {
+  height: 100%;
+  width: auto;
+  overflow: unset;
+}
+
+.illselected.projectview.illustrationview h2 {
+  opacity: 1;
+}
+.illselected.projectview.illustrationview h2 .projects {
+  display: none;
+}
+.illselected.projectview.illustrationview h2 .illustrations {
+  display: inline-block;
+  opacity: 1;
+}
+.illselected.projectview.illustrationview img.projects {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.projectview .hero-img, .projselected .hero-img, .illustrationview .hero-img, .illselected.illustrationview .hero-img, .illselected .hero-img {
+  overflow: hidden;
+}
+.projectview .hero-img svg, .projselected .hero-img svg, .illustrationview .hero-img svg, .illselected.illustrationview .hero-img svg, .illselected .hero-img svg {
+  -webkit-transform: translateX(140%);
+          transform: translateX(140%);
+}
+.projectview .wrapper, .projselected .wrapper, .illustrationview .wrapper, .illselected.illustrationview .wrapper, .illselected .wrapper {
+  padding-right: 5%;
+}
+.projectview .tile p, .projectview .tile a, .projselected .tile p, .projselected .tile a, .illustrationview .tile p, .illustrationview .tile a, .illselected.illustrationview .tile p, .illselected.illustrationview .tile a, .illselected .tile p, .illselected .tile a {
+  display: none;
+}
+
+.illselected.projectview .tiles .default {
+  padding-bottom: 5%;
+}
+
+.projectfix .tiles > .row:first-child, .projectfix .tiles > .row:first-child {
+  height: 0 !important;
+  max-height: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#viewprojects {
+  background-color: #1b1b1b;
+  width: 2px;
+  height: 140px;
+}
+
+#viewillustrations {
+  background-color: #1b1b1b;
+  width: 2px;
+  height: 20px;
+}
+
+@-webkit-keyframes example {
+  0% {
+    position: fixed;
+    top: 15px;
+  }
+  99% {
+    position: fixed;
+    top: 15px;
+  }
+  100% {
+    position: relative;
+    top: unset;
+  }
+}
+
+@keyframes example {
+  0% {
+    position: fixed;
+    top: 15px;
+  }
+  99% {
+    position: fixed;
+    top: 15px;
+  }
+  100% {
+    position: relative;
+    top: unset;
+  }
+}
+@-webkit-keyframes noscroll {
+  0% {
+    overflow: visible;
+  }
+  99% {
+    overflow: visible;
+  }
+  100% {
+    overflow: scroll;
+  }
+}
+@keyframes noscroll {
+  0% {
+    overflow: visible;
+  }
+  99% {
+    overflow: visible;
+  }
+  100% {
+    overflow: scroll;
+  }
+}
+@-webkit-keyframes slidefromright {
+  0% {
+    margin-right: -100%;
+  }
+  50% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@keyframes slidefromright {
+  0% {
+    margin-right: -100%;
+  }
+  50% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@-webkit-keyframes opacityanim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacityanim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes onloadanim {
+  0% {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  99% {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  100% {
+    position: relative;
+    height: unset;
+    overflow: scroll;
+  }
+}
+@keyframes onloadanim {
+  0% {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  99% {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  100% {
+    position: relative;
+    height: unset;
+    overflow: scroll;
+  }
+}
+.hero-img svg {
+  -webkit-animation-name: slidefromright;
+          animation-name: slidefromright;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+section, nav {
+  -webkit-animation-name: opacityanim;
+          animation-name: opacityanim;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+html {
+  -webkit-animation-name: onloadanim;
+          animation-name: onloadanim;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+}
+
+.illustrationview .tiles, .illselected.illustrationview .tiles {
+  -webkit-animation-name: noscroll;
+          animation-name: noscroll;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@media screen and (max-width: 1164px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+  h2::after {
+    width: 105%;
+    margin-left: -2.5%;
+  }
+  nav {
+    width: 100%;
+    left: 0;
+    padding: 0 5%;
+    top: 150px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 0.5s top;
+    transition: 0.5s top;
+    font-size: 1.6rem;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #headings {
+    padding-top: 175px;
+  }
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  svg {
+    width: 28%;
+  }
+  .projects p, .illustrations p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #illustrations {
+    margin-top: 470px;
+  }
+  .projectview nav, .projselected nav, .illustrationview nav, .illselected.illustrationview nav, .illselected nav {
+    top: 70px;
+    font-size: 1.4rem;
+  }
+  .projectview .row, .projselected .row, .illustrationview .row, .illselected.illustrationview .row, .illselected .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 15px;
+  }
+  .illselected .tiles .default, .illustrationview .tiles .default,
+  .illselected.illustrationview .tiles .default {
+    padding-bottom: 12%;
+  }
+  .projectview .tiles .default, .projselected .tiles .default {
+    padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 920px) {
+  h1 {
+    line-height: 0.5;
+    padding-bottom: 5px;
+  }
+  .projectview h1, .illselected h1, .illustrationview h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding-top: 20%;
+  }
+  #burger {
+    display: block;
+    width: 30px;
+    position: fixed;
+    z-index: 1000000;
+    right: 0;
+    top: 0;
+    margin: 5%;
+    margin-top: 20%;
+    cursor: pointer;
+    -webkit-transition: 0.5s width, 0.5s margin-top;
+    transition: 0.5s width, 0.5s margin-top;
+  }
+  #burger .line {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: #f3f3f3;
+  }
+  nav {
+    padding-top: 22%;
+    text-align: right;
+    top: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    height: 100vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.5s -webkit-transform;
+    transition: 0.5s -webkit-transform;
+    transition: 0.5s transform;
+    transition: 0.5s transform, 0.5s -webkit-transform;
+  }
+  nav li {
+    display: block;
+    margin-right: 0;
+  }
+  .projectview nav, .projselected nav, .illustrationview nav,
+  .illselected.illustrationview nav, .illselected nav {
+    top: 0;
+  }
+  .clicked {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .clicked #burger {
+    width: 45px;
+  }
+  .clicked nav {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .hero-img {
+    display: none;
+  }
+  #headings {
+    padding-top: 100px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    min-height: 1.5rem;
+  }
+  .tile {
+    width: 46%;
+  }
+  .tile.illustrations {
+    height: 0;
+    margin: 0;
+  }
+  .tile img {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .projectview .row, .projselected .row, .illustrationview .row, .illselected.illustrationview .row, .illselected .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .projectview .tile, .projselected .tile, .illustrationview .tile, .illselected.illustrationview .tile, .illselected .tile {
+    margin-right: 2%;
+    margin-bottom: 10px;
+    width: 46%;
+    height: 20vh;
+    max-height: 190px;
+  }
+  .projectview #burger, .projselected #burger, .illustrationview #burger, .illselected.illustrationview #burger, .illselected #burger {
+    margin-top: 35px;
+  }
+  .projectview .tile.illustrations, .projselected .tile.illustrations {
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+  .illustrationview .tile.illustrations, .illselected.illustrationview .tile.illustrations, .illselected .tile.illustrations, .projectview.projselected.illustrationview .projectview.illustrationview .tile.illustrations {
+    margin-right: 2%;
+    margin-bottom: 10px;
+    width: 46%;
+    height: 20vh;
+    max-height: 190px;
+  }
+  .illustrationview .projects, .illselected.illustrationview .projects, .illselected .projects, .projectview.projselected.illustrationview .projectview.illustrationview .projects {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  .illustrationview nav, .illselected.illustrationview nav, .illselected nav, .projectview.projselected.illustrationview .projectview.illustrationview nav {
+    padding-top: 100px;
+    top: 0;
+  }
+  #illustrations {
+    margin-top: 60vh;
+  }
+  .illustrationview #illustrations {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-height: 740px) {
+  #spacing {
+    height: 380px !important;
+    max-height: 60vh;
+  }
+}
+@media screen and (min-height: 1000px) {
+  #spacing {
+    height: 58vh !important;
+  }
+  .projectview .tiles .default, .projselected .tiles .default {
+    padding-bottom: 12%;
+  }
+  .illselected.projectview .tiles .default, .illustrationview .tiles .default,
+  .illselected.illustrationview .tiles .default {
+    padding-bottom: 18%;
+  }
+}
+@media screen and (min-height: 1025px) {
+  .projectview .tiles .default, .projselected .tiles .default,
+  .illselected .tiles .default, .illustrationview .tiles .default {
+    padding-bottom: 25vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tiles {
+    max-height: 50vh;
+  }
+}/*# sourceMappingURL=style.css.map */
