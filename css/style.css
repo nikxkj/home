@@ -337,8 +337,7 @@ h2 .illustrations {
   padding-bottom: 5%;
 }
 .projectview .tiles, .projselected .tiles {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #1b1b1b));
-  background: linear-gradient(180deg, transparent, #1b1b1b 12%);
+  background-color: #1b1b1b;
   padding-top: 30px;
 }
 .projectview .tile, .projselected .tile {
@@ -441,8 +440,7 @@ h2 .illustrations {
   padding-bottom: 18%;
 }
 .illustrationview .tiles, .illselected.illustrationview .tiles {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(12%, #1b1b1b));
-  background: linear-gradient(180deg, transparent, #1b1b1b 12%);
+  background-color: #1b1b1b;
   padding-top: 30px;
 }
 .illustrationview #details, .illselected.illustrationview #details {
@@ -921,4 +919,17 @@ html {
     border: 4px solid #e85b5b;
     margin-right: 2%;
   }
+}
+.myprocess {
+  background-image: url("../img/theprocess.svg");
+  background-size: contain;
+}
+
+.otherartstuff {
+  background-image: url("../img/otherartstuff.svg");
+  background-size: contain;
+}
+
+.projectview .myprocess, .projectview .otherartstuff, .projselected .myprocess, .projselected .otherartstuff, .illustrationview .myprocess, .illustrationview .otherartstuff, .illselected.illustrationview .myprocess, .illselected.illustrationview .otherartstuff, .illselected .myprocess, .illselected .otherartstuff {
+  background-image: none;
 }/*# sourceMappingURL=style.css.map */
