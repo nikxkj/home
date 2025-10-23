@@ -35,6 +35,7 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+  font: inherit;
 }
 
 img {
@@ -140,6 +141,7 @@ section {
   position: relative;
   min-height: 100vh;
   padding: 5%;
+  padding-bottom: 0;
 }
 
 .navigate {
@@ -408,6 +410,9 @@ nav .socialmedia a {
   h1, h2, h3 {
     font-size: 1.5rem;
   }
+  p {
+    font-size: 1rem;
+  }
   body {
     padding-top: 30px;
   }
@@ -427,9 +432,7 @@ nav .socialmedia a {
     padding-bottom: 30px;
   }
   nav {
-    left: unset;
-    right: 5%;
-    top: 30px;
+    left: 0;
     -webkit-transform: unset;
             transform: unset;
     text-align: right;
@@ -476,6 +479,9 @@ nav .socialmedia a {
   nav .socialmedia .invisible {
     display: none;
   }
+  .nothome nav .socialmedia a {
+    max-width: 100%;
+  }
   .dialog {
     max-width: 100%;
     width: 100%;
@@ -487,9 +493,29 @@ nav .socialmedia a {
     bottom: unset;
     width: 100%;
   }
+  #home .dialog {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  #home .dialog.two {
+    margin-top: -60px;
+    width: 80%;
+    left: 10%;
+  }
+  #home .dialog.two.close {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .close {
+    height: 0;
+    margin: 0;
+  }
   .gallery {
     margin-left: 0;
     margin-top: 50px;
+  }
+  .gallery .image {
+    aspect-ratio: unset;
   }
   .gallery .image, .gallery .gallery.three .image {
     width: 100%;
@@ -501,6 +527,9 @@ nav .socialmedia a {
   }
   #illustrations .gallery .image .navigate {
     top: -2rem;
+  }
+  .clicked {
+    overflow: hidden;
   }
   .clicked .open span:first-child {
     display: none;
@@ -514,5 +543,8 @@ nav .socialmedia a {
   }
   .clicked nav ul {
     display: block;
+  }
+  #projects, #illustrations {
+    padding-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
