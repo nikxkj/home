@@ -407,11 +407,11 @@ nav .socialmedia a {
 }
 
 @media screen and (max-width: 800px) {
-  h1, h2, h3 {
+  h1, h2, h3, .navigate {
     font-size: 1.5rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   body {
     padding-top: 30px;
