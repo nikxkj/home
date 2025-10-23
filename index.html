@@ -5,219 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bytesized&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Funnel+Display:wght@300..800&display=swap"
-        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
-<body class="">
+<body>
+    <nav>
+        <div onclick="navFunction()" class="open cancel"><span>&#x25EF;</span><span>x</span></div>
+        <ul>
+            <li class="active" onclick="myClickFunction()"><a href="#"><span>&#x25EF;</span><span>Home</span></a></li>
+            <li><a href="#projects"><span>&#x25EF;</span><span>Projects</span></a></li>
+            <li><a href="#illustrations"><span>&#x25EF;</span><span>Illustrations</span></a></li>
+            <li class="socialmedia">
+                <p onclick="reAddFunction()"><span>&#x25EF;</span><span class="invisible">Social media</span><a
+                        href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a><a
+                        href="https://github.com/nikxkj" target="_blank">Github</a></p>
+            </li>
+        </ul>
+    </nav>
 
-    <section class="headline">
-        <div class="container">
-            <h1>NIK IKEJIANI (KEMDI)</h1>
+    <section id="home">
+        <div class="one dialog">
+            <div class="cancel">
+                <p>x</p>
+            </div>
+            <h1>Hi there! I'm Kemdi</h1>
             <p>
-                Multidisciplinary artist based in Toronto, Canada with a strong focus in web design. Currently a UI/UX
-                Designer @CI Financial
+                I also go by Nik sometimes. I'm a multidisciplinary artist based in Toronto, Canada with a strong focus
+                in web design. Currently a UI/UX Designer at CI Financial.
+            </p>
+        </div>
+
+        <div class="two dialog">
+            <div class="cancel">
+                <p>x</p>
+            </div>
+            <h2>Social media</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a> , <a
+                    href="https://github.com/nikxkj" target="_blank">Github</a>
+            </p>
+        </div>
+
+        <div class="three dialog">
+            <div class="cancel">
+                <p>x</p>
+            </div>
+            <h2>Projects</h2>
+            <p>
+                View some of my case studies
+            </p>
+            <p class="navigate">
+                <a href="#projects">Navigate</a>
+            </p>
+        </div>
+
+        <div class="four dialog">
+            <div class="cancel">
+                <p>x</p>
+            </div>
+            <h2>Illustrations</h2>
+            <p>
+                View some of my random drawings
+            </p>
+            <p class="navigate">
+                <a href="#illustrations">Navigate</a>
             </p>
         </div>
     </section>
 
-    <div id="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-
-    <nav>
-        <ul>
-            <li class="active"><a href="">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#illustrations">ILLUSTRATION</a></li>
-            <li><a href="https://github.com/nikxkj" target="_blank">GITHUB</a></li>
-            <li><a href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LINKEDIN</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero-img">
-        <svg xmlns="http://www.w3.org/2000/svg" width="381.968" height="380.222" viewBox="0 0 381.968 380.222">
-            <g id="Group_6" data-name="Group 6" transform="translate(-1617.724 -571.008)">
-                <g id="Group_5" data-name="Group 5" transform="translate(1654.955 618.241)">
-                    <path id="Path_30" data-name="Path 30"
-                        d="M4374.417,9748.7s-19.706,10.72-14.166,22.642,24.936,4.57,24.936,4.57"
-                        transform="translate(-4315.37 -9556.777)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_31" data-name="Path 31"
-                        d="M4437.08,9904.673s-20.393,16.168-13.143,27.8,24.523,0,24.523,0"
-                        transform="translate(-4356.179 -9656.105)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_35" data-name="Path 35"
-                        d="M4543.3,9547.336s17.13,15,30.307,20.659,108.594,40.192,108.594,40.192l-84.34,105.192-109.655-115.35Z"
-                        transform="translate(-4397.639 -9427.202)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_26" data-name="Path 26"
-                        d="M4707,9619.3s-7.542-4.627-9.445-6.025-4.34.708-8.166,0-9.448-4-9.448-4-10.894,6.912-35.446,5.977-24.9-17.511-24.9-17.511,6.6-6.293,12.789-8.813a147.394,147.394,0,0,1,16.384-4.989,50.666,50.666,0,0,0,11.586-5.708c5.482-3.752,12.632-11.848,21.156-12.659s30.813,5.774,42.879,7.854,27.171-.639,40.022,9.861,26.984,57.571,33.863,66.954,25.606,21.45,25.606,21.45-28.814,32.153-39.648,50.552-28.957,46.359-28.957,46.359a31.379,31.379,0,0,0-10.976-7.229c-6.925-2.719-29.5-6.628-43.926-9.034s-36.249-10.777-36.249-10.777-5.975.228-8.342,0-5.047-.528-5.047-.528a15.293,15.293,0,0,0,2.29,5.043c1.842,2.74,5.484,13.893,1.14,20.521s-13.2,1.075-17.884-3.122-16.169-18.144-16.169-18.144"
-                        transform="translate(-4482.193 -9438.895)" fill="#fff" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_22" data-name="Path 22"
-                        d="M17.829,9.094,89.907,0c9.847,0,17.829,5.839,17.829,13.042V279.42c0,7.2-7.982,13.042-17.829,13.042l-72.078,9.094C7.982,301.555,0,295.716,0,288.514V22.135C0,14.933,7.982,9.094,17.829,9.094Z"
-                        transform="translate(0 38.61) rotate(-21)" fill="#1b1b1b" opacity="0.996" />
-                    <path id="Path_25" data-name="Path 25"
-                        d="M15.3,8.36,77.1,0C85.545,0,92.39,5.368,92.39,11.989l-.007,242.894c0,6.621-6.845,11.989-15.288,11.989l-61.806,8.36C6.845,275.232,0,269.864,0,263.242L.007,20.349C.007,13.727,6.852,8.36,15.3,8.36Z"
-                        transform="translate(16.434 45.57) rotate(-21)" fill="#e85b5b" />
-                    <path id="Path_27" data-name="Path 27"
-                        d="M4707,9619.3s-7.542-4.627-9.445-6.025-4.34.708-8.166,0-9.448-4-9.448-4-10.894,6.912-35.446,5.977-24.9-17.511-24.9-17.511,6.6-6.293,12.789-8.813a147.394,147.394,0,0,1,16.384-4.989,50.666,50.666,0,0,0,11.586-5.708c5.482-3.752,12.632-11.848,21.156-12.659s30.813,5.774,42.879,7.854,27.171-.639,40.022,9.861,26.984,57.571,33.863,66.954,25.606,21.45,25.606,21.45-28.814,32.153-39.648,50.552-28.957,46.359-28.957,46.359a31.379,31.379,0,0,0-10.976-7.229"
-                        transform="translate(-4482.193 -9438.895)" fill="#fff" stroke="#1b1b1b" stroke-width="4"
-                        opacity="0.997" />
-                    <path id="Path_29" data-name="Path 29" d="M4711.66,10021.862s-6.556,6.66-5.018,12.582"
-                        transform="translate(-4538.066 -9732.238)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_32" data-name="Path 32"
-                        d="M4985.2,10028.361s8.02-9.219,11.478-15.25,4.576-14.792,10.891-23.02"
-                        transform="translate(-4717.489 -9712.148)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_33" data-name="Path 33" d="M4766.411,10016.036a100.033,100.033,0,0,0,4.477-30.79"
-                        transform="translate(-4576.683 -9711.451)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_34" data-name="Path 34"
-                        d="M4852.587,9797.971c-18.729-.29-30.9-21.422-37.723-29.463s-26.2-24.145-23.488-53.391"
-                        transform="translate(-4592.583 -9535.182)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                    <path id="Path_36" data-name="Path 36" d="M5027.937,9914.371s23.5-11.061,35.45-27.919"
-                        transform="translate(-4744.995 -9645.448)" fill="none" stroke="#1b1b1b" stroke-width="4" />
-                </g>
-                <g id="sparks" transform="translate(1617.896 571.787)">
-                    <path id="sparks_5" data-name="sparks 5" d="M5790.639,6296.459l11.5-14.058"
-                        transform="translate(-5635.803 -6262.26)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_4" data-name="sparks 4" d="M5718.552,6276.189l-18.862-44.577"
-                        transform="translate(-5627.555 -6231.612)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_3" data-name="sparks 3" d="M5615.312,6240.48l-15.79-11.094"
-                        transform="translate(-5591.164 -6157.106)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_2" data-name="sparks 2" d="M5626.394,6391.571l-26.774,2.318"
-                        transform="translate(-5599.62 -6239.442)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_1" data-name="sparks 1" d="M5663.512,6485.567l-11.032,4.207"
-                        transform="translate(-5597.747 -6278.911)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="sparks_6" data-name="sparks 6" d="M5803.235,6384.67l10.958-8.784"
-                        transform="translate(-5623.945 -6285.463)" fill="none" stroke="#fff" stroke-width="4" />
-                    <path id="Path_38" data-name="Path 38" d="M1768.5,670.937l29.033-6.443"
-                        transform="translate(-1578.251 -522.343)" fill="none" stroke="#fff" stroke-width="4" />
-                </g>
-            </g>
-        </svg>
-    </div>
-
-    <div id="home"></div>
-
-    <section class="frame1" id="projects">
-
-        <div class="wrapper" id="headings">
-            <h2>
-                <span class="projects">My approach to UI/UX design</span>
-                <span class="illustrations">I draw sometimes</span>
-            </h2>
+    <section id="projects">
+        <div class="dialog">
+            <div class="cancel">
+                <p onclick="topFunction()">x</p>
+            </div>
+            <h2>Projects</h2>
+            <p>
+                View some of my case studies
+            </p>
         </div>
 
-        <div class="">
-
-            <div id="details">
-                <div id="viewprojects"></div>
-                <div class="projects wrapper">
-                    <p>
-                        Be it a revamp or a completely new project, I tend to follow the same steps: research,
-                        documentations, drafts, and design reviews.
-                    </p>
-                    <p>
-                        A completely new project usually means a new brand guideline and new direction. In cases like
-                        that, there’s a lot of initial spitballing between the stakeholders and me. I’m able to build a
-                        direction based on the demographic for said product and any other consumer data that is
-                        provided. From there, I research competitors to note what the growing trend is and if that’s
-                        something that can be implemented to the project. Eventually, multiple images are sourced and
-                        different colour schemes are worked through. From there I work on mockups and build out the
-                        prototypes. My favourite tool is Adobe XD, although I also use Figma, depending on if the
-                        stakeholders/customer has a preference.
-                    </p>
-                    <p>
-                        Flowcharts are also an important part of the process. It helps ensure that the user experience
-                        flows properly and that all the pages contained in the site/app can easily be navigated to.
-                    </p>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/prestige-flowchart.png" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-onboarding-flowchart.png" alt="">
-                    </div>
-                    <p>
-                        Consistency with fonts, icons, CTAs is another important aspect of a site or an app's
-                        branding. I utilize the features on the various design tools (Adobe XD, Figma, Sketch) to ensure
-                        that I'm using consistent fonts styling and colours throughout. I always work out the colour
-                        palette and overall theme branding before I start a high fidelity design. Although most times, I
-                        provide multiple mockups where I use the colours in different ways
-                    </p>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-palette.png" alt="">
-                    </div>
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-icons.png" alt="">
-                    </div>
-                    <p>
-                        For a simple revamp, I’m usually working with existing brand guidelines and with a tighter
-                        timeframe. I’m quicker with this. Multiple drafts aren’t usually required. Although I always
-                        make sure to provide two hi-fi mockups. After some feedback and remarks from the stakeholders, I
-                        narrow it down to one design and refine as needed.
-                    </p>
-                </div>
-
-                <div id="illustrations"></div>
-
-                <div class="illustrations wrapper">
-                    <p>
-                        Here are some of my most recent works
-                    </p>
-                    <div id="viewillustrations"></div>
-                </div>
-
-                <div id="spacing"></div>
+        <div class="gallery">
+            <div class="image">
+                <img src="img/1.png" alt="">
+                <a href="projects/1.html"></a>
+                <p class="navigate">View case study</p>
             </div>
 
+            <div class="image">
+                <img src="img/2.png" alt="">
+                <a href="projects/2.html"></a>
+                <p class="navigate">View case study</p>
+            </div>
+
+            <div class="image">
+                <img src="img/3.png" alt="">
+                <a href="projects/1.html"></a>
+                <p class="navigate">View case study</p>
+            </div>
+
+            <div class="image">
+                <img src="img/4.png" alt="">
+                <a href="projects/1.html"></a>
+                <p class="navigate">View case study</p>
+            </div>
         </div>
 
     </section>
 
-    <section class="frame2">
-        <div class="tiles">
-            <div class="row wrapper">
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/normal-people.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/peaches.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/couple.jpg" alt="">
-                </div>
-                <div class="tile illustrations">
-                    <img src="https://nikxkj.github.io/home/img/boat.jpg" alt="">
-                </div>
+
+    <section id="illustrations">
+        <div class="dialog">
+            <div class="cancel">
+                <p onclick="topFunction()">x</p>
+            </div>
+            <h2>Illustrations</h2>
+            <p>
+                View some of my drawings
+            </p>
+        </div>
+
+        <div class="gallery">
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/normal-people.jpg" alt="">
+                <p class="navigate">Normal people</p>
             </div>
 
-            <div class="row default wrapper">
-                <div class="tile">
-                    <p>My process</p><a class="intro" href="#projects"></a>
-                    <img class="projects" src="https://nikxkj.github.io/home/project/img/prestige-0.png" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/glasses.png" alt="">
-                </div>
-                <div class="tile">
-                    <p>Other art stuff</p><a class="intro" href="#illustrations"></a>
-                    <img class="projects" src="https://nikxkj.github.io/home/img/img-home-ci-gam.jpg" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/portrait.png" alt="">
-                </div>
-                <div class="tile projects">
-                    <img class="projects" src="https://nikxkj.github.io/home/project/img/booktopia-0.png" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/product-mockup.jpg" alt="">
-                </div>
-                <div class="tile projects">
-                    <img class="projects" src="https://nikxkj.github.io/home/project/img/mitto-0.png" alt="">
-                    <img class="illustrations" src="https://nikxkj.github.io/home/img/self-portrait.png" alt="">
-                </div>
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/peaches.jpg" alt="">
+                <p class="navigate">My sister's dog</p>
+            </div>
+
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/couple.jpg" alt="">
+                <p class="navigate">A couple of people</p>
+            </div>
+
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/boat.jpg" alt="">
+                <p class="navigate">Date</p>
+            </div>
+
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/glasses.png" alt="">
+                <p class="navigate">Glasses</p>
+            </div>
+
+            <div class="image">
+                <img src="https://nikxkj.github.io/home/img/portrait.png" alt="">
+                <p class="navigate">Vector portrait</p>
             </div>
         </div>
+
     </section>
+
 
     <script src="js/script.js"></script>
+
 
 </body>
 
