@@ -1,0 +1,25 @@
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.dialog{position: relative;}
+
+section{min-height: unset;}
+
+.gallery{margin: 30px 0}
+.gallery .image{vertical-align: top;}
+
+.dialog{display: inline-block;}
+
+section > .wrapper{margin-left: 10%;}
+
+
+@media screen and (max-width: 800px){
+    section > .wrapper{margin-left: 0;}
+    .gallery.three .image{width: 100%;}
+    .gallery.three .image:nth-child(even){margin-left: 0;margin-right: 0;}
+}
