@@ -10,6 +10,11 @@ var home = document.getElementById("home");
 var projects = document.querySelector("#projects .gallery");
 var illustrations = document.querySelector("#illustrations .gallery");
 
+for (var i = 0; i < navlis.length; i++) {
+  var navli = navlis[i];
+  navli.setAttribute("onclick", "myClickFunction()");
+}
+
 //onscroll viewport behavior
 (function () {
   var prevScrollpos = window.pageYOffset;
@@ -52,6 +57,7 @@ var illustrations = document.querySelector("#illustrations .gallery");
 
     for (var i = 0; i < navlis.length; i++) {
       var navli = navlis[i];
+
       if (elementInViewport(home)) {
         navli.classList.remove("active");
         navlis[0].classList.add("active");
@@ -106,8 +112,11 @@ for (var i = 0; i < dialog.length; i++) {
 }
 
 function myClickFunction() {
-  htmlsec.classList.add("removesm");
   htmlsec.classList.remove("showsm");
+  if (document.querySelector(".clicked")) {
+    htmlsec.classList.remove("clicked");
+  }
+
   dialog.forEach((element) => {
     element.classList.remove("close");
   });
