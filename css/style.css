@@ -498,15 +498,18 @@ nav .socialmedia a {
     margin-bottom: 20px;
   }
   #home .dialog.two {
-    margin-top: -60px;
-    width: 80%;
+    margin-top: -40px;
+    width: unset;
     left: 10%;
+    display: inline-block;
+    max-width: 85%;
   }
   #home .dialog.two.close {
     margin-top: 0;
     margin-bottom: 0;
+    display: block;
   }
-  .close {
+  #home .close {
     height: 0;
     margin: 0;
   }
