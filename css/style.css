@@ -267,6 +267,9 @@ section {
 .gallery .image:hover .navigate {
   opacity: 1;
 }
+.gallery.three {
+  margin-bottom: 0;
+}
 .gallery.three .image {
   width: 29%;
   vertical-align: top;
@@ -519,6 +522,7 @@ nav .socialmedia a {
   }
   .gallery .image {
     aspect-ratio: unset;
+    text-align: center;
   }
   .gallery .image, .gallery .gallery.three .image {
     width: 100%;
@@ -527,6 +531,9 @@ nav .socialmedia a {
   .gallery .image:nth-child(even) {
     margin-left: 0;
     margin-right: 0;
+  }
+  .gallery img {
+    display: inline-block;
   }
   #illustrations .gallery .image .navigate {
     top: -2rem;
@@ -549,5 +556,10 @@ nav .socialmedia a {
   }
   #projects, #illustrations {
     padding-top: 30px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .gallery.three .image {
+    padding: 2%;
   }
 }/*# sourceMappingURL=style.css.map */
