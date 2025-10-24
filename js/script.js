@@ -19,56 +19,48 @@ for (var i = 0; i < navlis.length; i++) {
 (function () {
   var prevScrollpos = window.pageYOffset;
 
-  var navactive = document.querySelector("nav active");
+  //var navactive = document.querySelector("nav active");
 
   function onScroll() {
     var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 
-    if (!elementInViewport(home)) {
-      htmlsec.classList.add("nothome");
-    } else {
-      htmlsec.classList.remove("nothome");
-    }
+    if (home) {
+      if (!elementInViewport(home)) {
+        htmlsec.classList.add("nothome");
+      } else {
+        htmlsec.classList.remove("nothome");
+      }
 
-    if (elementInViewport(projects)) {
-      htmlsec.classList.add("projectview");
-    } else {
-      htmlsec.classList.remove("projectview");
-    }
+      if (elementInViewport(projects)) {
+        htmlsec.classList.add("projectview");
+      } else {
+        htmlsec.classList.remove("projectview");
+      }
 
-    if (elementInViewport(illustrations)) {
-      htmlsec.classList.add("illustrationview");
-    } else {
-      htmlsec.classList.remove("illustrationview");
-    }
-
-    if (window.location.href.includes("projects")) {
-      htmlsec.classList.add("projselected");
-    } else {
-      htmlsec.classList.remove("projselected");
-    }
-
-    if (window.location.href.includes("illustrations")) {
-      htmlsec.classList.add("illselected");
-    } else {
-      htmlsec.classList.remove("illselected");
+      if (elementInViewport(illustrations)) {
+        htmlsec.classList.add("illustrationview");
+      } else {
+        htmlsec.classList.remove("illustrationview");
+      }
     }
 
     for (var i = 0; i < navlis.length; i++) {
       var navli = navlis[i];
 
-      if (elementInViewport(home)) {
-        navli.classList.remove("active");
-        navlis[0].classList.add("active");
-      }
-      if (elementInViewport(projects)) {
-        navli.classList.remove("active");
-        navlis[1].classList.add("active");
-      }
-      if (elementInViewport(illustrations)) {
-        navli.classList.remove("active");
-        navlis[2].classList.add("active");
+      if (home) {
+        if (elementInViewport(home)) {
+          navli.classList.remove("active");
+          navlis[0].classList.add("active");
+        }
+        if (elementInViewport(projects)) {
+          navli.classList.remove("active");
+          navlis[1].classList.add("active");
+        }
+        if (elementInViewport(illustrations)) {
+          navli.classList.remove("active");
+          navlis[2].classList.add("active");
+        }
       }
     }
   }
