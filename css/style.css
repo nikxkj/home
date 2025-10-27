@@ -114,7 +114,12 @@ nav li:hover:nth-child(4) a, nav li:hover:nth-child(4) p, nav li.active:hover:nt
   background-color: #0ec778;
 }
 nav .socialmedia {
-  display: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
   cursor: pointer;
 }
 nav .socialmedia p {
@@ -368,6 +373,8 @@ nav .socialmedia a {
 
 .showsm .socialmedia, .nothome .socialmedia {
   display: list-item;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*
@@ -415,6 +422,7 @@ nav .socialmedia a {
   }
   p {
     font-size: 0.9rem;
+    line-height: 1.5;
   }
   body {
     padding-top: 30px;
@@ -470,6 +478,8 @@ nav .socialmedia a {
   }
   nav .socialmedia {
     display: list-item;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   nav .socialmedia a {
     max-width: 180px;
@@ -495,13 +505,17 @@ nav .socialmedia a {
     right: unset;
     bottom: unset;
     width: 100%;
+    top: unset;
   }
   #home .dialog {
     margin: 0;
     margin-bottom: 20px;
+    -webkit-transition: 0.5s height, 0.5s -webkit-transform;
+    transition: 0.5s height, 0.5s -webkit-transform;
+    transition: 0.5s transform, 0.5s height;
+    transition: 0.5s transform, 0.5s height, 0.5s -webkit-transform;
   }
   #home .dialog.two {
-    margin-top: -40px;
     width: unset;
     left: 10%;
     display: inline-block;
@@ -524,9 +538,9 @@ nav .socialmedia a {
     aspect-ratio: unset;
     text-align: center;
   }
-  .gallery .image, .gallery .gallery.three .image {
+  .gallery .image, .gallery .gallery.three .image, .gallery.three .image:nth-child(even) {
     width: 100%;
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
   }
   .gallery .image:nth-child(even) {
     margin-left: 0;
@@ -557,9 +571,21 @@ nav .socialmedia a {
   #projects, #illustrations {
     padding-top: 30px;
   }
+  .gallery .image:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 801px) {
   .gallery.three .image {
     padding: 2%;
+  }
+  nav ul li:last-child {
+    border-color: green;
+  }
+  nav ul li:last-child p {
+    border-color: green;
+  }
+  nav ul li:last-child p span:first-child {
+    color: green;
   }
 }/*# sourceMappingURL=style.css.map */
