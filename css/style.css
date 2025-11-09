@@ -55,7 +55,8 @@ nav {
 nav li {
   list-style: none;
   color: #000;
-  margin: 60px 0;
+  margin: 40px 0;
+  font-size: 1rem;
 }
 nav li a {
   padding: 15px 20px;
@@ -70,8 +71,8 @@ nav li a span:last-child {
   padding-left: 0;
   max-width: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s max-width, 0.3s padding;
-  transition: 0.5s max-width, 0.3s padding;
+  -webkit-transition: 0.5s max-width, 0.5s padding;
+  transition: 0.5s max-width, 0.5s padding;
 }
 nav li p {
   background-color: #fff;
@@ -94,39 +95,27 @@ nav .active:nth-child(3) a {
 nav .active:nth-child(4) a, nav .active:nth-child(4) p {
   background-color: #0ec778;
 }
-nav li:hover, nav li.active:hover {
+nav li:hover, nav li.active:hover, nav li:first-child.active {
   color: #fff;
 }
-nav li:hover a span:last-child, nav li.active:hover a span:last-child {
+nav li:hover a span:last-child, nav li.active:hover a span:last-child, nav li:first-child.active a span:last-child {
   padding-left: 15px;
   max-width: 160px;
 }
-nav li:hover:nth-child(1) a, nav li.active:hover:nth-child(1) a {
+nav li:hover:nth-child(1) a, nav li.active:hover:nth-child(1) a, nav li:first-child.active:nth-child(1) a {
   background-color: #5C78EF;
 }
-nav li:hover:nth-child(2) a, nav li.active:hover:nth-child(2) a {
+nav li:hover:nth-child(2) a, nav li.active:hover:nth-child(2) a, nav li:first-child.active:nth-child(2) a {
   background-color: #ED8023;
 }
-nav li:hover:nth-child(3) a, nav li.active:hover:nth-child(3) a {
+nav li:hover:nth-child(3) a, nav li.active:hover:nth-child(3) a, nav li:first-child.active:nth-child(3) a {
   background-color: #F55050;
 }
-nav li:hover:nth-child(4) a, nav li:hover:nth-child(4) p, nav li.active:hover:nth-child(4) a, nav li.active:hover:nth-child(4) p {
+nav li:hover:nth-child(4) a, nav li:hover:nth-child(4) p, nav li.active:hover:nth-child(4) a, nav li.active:hover:nth-child(4) p, nav li:first-child.active:nth-child(4) a, nav li:first-child.active:nth-child(4) p {
   background-color: #0ec778;
 }
 nav .socialmedia {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: 0.5s -webkit-transform;
-  transition: 0.5s -webkit-transform;
-  transition: 0.5s transform;
-  transition: 0.5s transform, 0.5s -webkit-transform;
   cursor: pointer;
-}
-nav .socialmedia p {
-  padding: 15px 20px;
-  border: 1px solid #000;
-  margin: 0;
-  display: inline;
 }
 nav .socialmedia a {
   border: 0;
@@ -135,10 +124,8 @@ nav .socialmedia a {
   max-width: 0;
   overflow: hidden;
   vertical-align: bottom;
-}
-nav .socialmedia p:hover a {
-  max-width: 180px;
-  padding-left: 15px;
+  -webkit-transition: 0.5s max-width, 0.5s padding;
+  transition: 0.5s max-width, 0.5s padding;
 }
 
 section {
@@ -192,27 +179,27 @@ section {
   left: 20%;
   top: 15%;
 }
-.dialog.two {
+.dialog.four {
   left: 15%;
   top: 29%;
 }
-.dialog.two h2 {
+.dialog.four h2 {
   color: #0ec778;
 }
-.dialog.three {
+.dialog.two {
   right: 10%;
   top: 45%;
   width: 220px;
 }
-.dialog.three h2 {
+.dialog.two h2 {
   color: #ED8023;
 }
-.dialog.four {
+.dialog.three {
   right: 40%;
   bottom: 15%;
   width: 250px;
 }
-.dialog.four h2 {
+.dialog.three h2 {
   color: #F55050;
 }
 
@@ -272,14 +259,14 @@ section {
 .gallery .image:hover .navigate {
   opacity: 1;
 }
-.gallery.three {
+.gallery.two {
   margin-bottom: 0;
 }
-.gallery.three .image {
+.gallery.two .image {
   width: 29%;
   vertical-align: top;
 }
-.gallery.three .image:nth-child(even) {
+.gallery.two .image:nth-child(even) {
   margin: 0 4%;
 }
 
@@ -328,59 +315,139 @@ section {
   opacity: 0;
 }
 
-nav .socialmedia a {
-  pointer-events: none;
-  max-width: 0;
-  overflow: hidden;
-}
+/*
+nav .socialmedia a{pointer-events: none;max-width: 0;overflow: hidden;}
+nav .socialmedia .invisible{white-space: nowrap;display: inline-block;vertical-align: bottom;padding-left: 0;max-width: 0;overflow: hidden;transition: 0.5s max-width, 0.3s padding;}
+nav .socialmedia:hover .invisible{max-width: 180px;padding-left: 15px;}
+nav .socialmedia a{display: none;}
+.nothome nav .socialmedia a{pointer-events: unset;display: inline-block;max-width: 0;overflow: hidden;transition: 0.5s max-width, 0.3s padding;}
+.nothome nav .socialmedia:hover a{max-width: 110px;}
+.nothome nav .socialmedia .invisible{display: none !important;}
 
-nav .socialmedia .invisible {
+.sm .socialmedia, .nothome .socialmedia{display: list-item;transform: scale(1);}
+*/
+nav li:nth-child(4) .invisible {
   white-space: nowrap;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   padding-left: 0;
   max-width: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s max-width, 0.3s padding;
-  transition: 0.5s max-width, 0.3s padding;
+  -webkit-transition: 0.5s max-width, 0.5s padding;
+  transition: 0.5s max-width, 0.5s padding;
+}
+nav li:nth-child(4):hover .invisible {
+  max-width: 140px;
+  padding-right: 15px;
+}
+nav li:nth-child(4) > span {
+  background-color: #fff;
+  background-color: #fff;
+  border: 1px solid green;
+  display: inline-block;
+}
+nav li:nth-child(4) > span:hover {
+  background-color: #0ec778;
+}
+nav li:nth-child(4) span span:first-child {
+  padding: 15px 20px;
+  display: inline-block;
+}
+nav li:nth-child(4) span a {
+  vertical-align: middle;
 }
 
-nav .socialmedia:hover .invisible {
-  max-width: 180px;
-  padding-left: 15px;
+nav li:nth-child(4):hover span a {
+  padding-right: 15px;
 }
 
-nav .socialmedia a {
+nav {
+  white-space: nowrap;
+}
+nav a {
+  display: inline-block;
+}
+nav li {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
+  transition: 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
+  transition: 0.5s transform, 0.5s max-height, 0.5s margin;
+  transition: 0.5s transform, 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
+  cursor: pointer;
+}
+nav li a span {
+  vertical-align: bottom;
+}
+
+.home nav li:nth-child(1) {
+  max-height: 80px;
+  margin: 40px 0;
+}
+.home nav li:nth-child(4) a {
   display: none;
 }
+.home nav a {
+  pointer-events: none;
+}
+.home nav li {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  max-height: 0;
+  margin: 0;
+}
+.home nav li.shownav {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  max-height: 80px;
+  margin: 40px 0;
+  pointer-events: unset;
+}
 
+nav li > a {
+  max-width: unset;
+}
+
+.nothome nav li {
+  display: list-item;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.nothome nav a {
+  pointer-events: unset;
+  overflow: hidden;
+}
+.nothome nav li:hover a {
+  max-width: 200px;
+}
 .nothome nav .socialmedia a {
   pointer-events: unset;
   display: inline-block;
   max-width: 0;
   overflow: hidden;
-  -webkit-transition: 0.5s max-width, 0.3s padding;
-  transition: 0.5s max-width, 0.3s padding;
+  -webkit-transition: 0.5s max-width, 0.5s padding;
+  transition: 0.5s max-width, 0.5s padding;
 }
-
-.nothome nav .socialmedia:hover a {
-  max-width: 110px;
-}
-
 .nothome nav .socialmedia .invisible {
   display: none !important;
 }
+.nothome nav .socialmedia:hover a {
+  max-width: 100px;
+}
 
-.showsm .socialmedia, .nothome .socialmedia {
-  display: list-item;
+nav li:first-child {
   -webkit-transform: scale(1);
           transform: scale(1);
+  pointer-events: unset;
+}
+nav li:first-child a {
+  pointer-events: unset;
 }
 
 /*
 .removesm{
     nav .socialmedia{display: none;}
-    &.showsm.nothome .socialmedia{display: list-item;}
+    &.sm.nothome .socialmedia{display: list-item;}
 }
 */
 .projectview #projects .dialog {
@@ -417,7 +484,10 @@ nav .socialmedia a {
 }
 
 @media screen and (max-width: 800px) {
-  h1, h2, h3, .navigate {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2, h3, .navigate {
     font-size: 1.5rem;
   }
   p {
@@ -428,11 +498,11 @@ nav .socialmedia a {
     padding-top: 30px;
   }
   .open {
-    display: block;
+    display: inline-block;
   }
   nav ul {
     display: none;
-    padding-top: 15%;
+    padding-top: 10%;
   }
   section {
     max-width: 100%;
@@ -452,10 +522,19 @@ nav .socialmedia a {
     right: 0;
     top: 0;
     padding: 30px 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav li {
-    margin: 0;
-    margin-bottom: 60px;
+    margin: 10% 0;
   }
   nav li, nav li:hover, nav li.active:hover {
     color: #fff;
@@ -481,19 +560,30 @@ nav .socialmedia a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  nav .socialmedia a {
-    max-width: 180px;
-    padding-left: 15px;
+  nav li {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  nav .socialmedia a {
+  .home nav a {
     pointer-events: unset;
+  }
+  .home nav li {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    max-height: 700px;
+    margin: 10% 0;
+  }
+  .home nav li:nth-child(4) a {
     display: inline-block;
   }
-  nav .socialmedia .invisible {
-    display: none;
+  nav li:nth-child(4) > span {
+    background-color: #0ec778;
   }
-  .nothome nav .socialmedia a {
+  nav .socialmedia a, .nothome nav .socialmedia a {
     max-width: 100%;
+  }
+  nav li:nth-child(4) span a {
+    padding-right: 15px;
   }
   .dialog {
     max-width: 100%;
@@ -510,25 +600,16 @@ nav .socialmedia a {
   #home .dialog {
     margin: 0;
     margin-bottom: 20px;
-    -webkit-transition: 0.5s height, 0.5s -webkit-transform;
-    transition: 0.5s height, 0.5s -webkit-transform;
-    transition: 0.5s transform, 0.5s height;
-    transition: 0.5s transform, 0.5s height, 0.5s -webkit-transform;
-  }
-  #home .dialog.two {
-    width: unset;
-    left: 10%;
-    display: inline-block;
-    max-width: 85%;
-  }
-  #home .dialog.two.close {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: block;
+    max-height: 400px;
+    -webkit-transition: 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
+    transition: 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
+    transition: 0.5s transform, 0.5s max-height, 0.5s margin;
+    transition: 0.5s transform, 0.5s max-height, 0.5s margin, 0.5s -webkit-transform;
   }
   #home .close {
-    height: 0;
+    max-height: 0;
     margin: 0;
+    overflow: hidden;
   }
   .gallery {
     margin-left: 0;
@@ -538,9 +619,9 @@ nav .socialmedia a {
     aspect-ratio: unset;
     text-align: center;
   }
-  .gallery .image, .gallery .gallery.three .image, .gallery.three .image:nth-child(even) {
+  .gallery .image, .gallery .gallery.two .image, .gallery.two .image:nth-child(even) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .gallery .image:nth-child(even) {
     margin-left: 0;
@@ -576,8 +657,11 @@ nav .socialmedia a {
   }
 }
 @media screen and (min-width: 801px) {
-  .gallery.three .image {
+  .gallery.two .image {
     padding: 2%;
+  }
+  nav li a {
+    white-space: nowrap;
   }
   nav ul li:last-child {
     border-color: green;
@@ -588,4 +672,118 @@ nav .socialmedia a {
   nav ul li:last-child p span:first-child {
     color: green;
   }
+  nav li {
+    display: inline-block;
+    max-width: 60px;
+  }
+  nav li.shownav {
+    display: list-item;
+    max-width: 60px;
+  }
+  nav li:hover, nav li.active, nav li.shownav:hover {
+    display: list-item;
+    max-width: unset;
+  }
+  .casestudy nav li {
+    display: list-item;
+    max-width: unset;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  10% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+nav {
+  -webkit-animation: opacity2 0.5s;
+          animation: opacity2 0.5s;
+}
+
+#home .dialog.one {
+  -webkit-animation: opacity2 0.5s;
+          animation: opacity2 0.5s;
+}
+#home .dialog.two {
+  -webkit-animation: scale 0.5s 0.4s, opacity 0.7s;
+          animation: scale 0.5s 0.4s, opacity 0.7s;
+}
+#home .dialog.three {
+  -webkit-animation: scale 0.5s 0.9s, opacity 1.1s;
+          animation: scale 0.5s 0.9s, opacity 1.1s;
+}
+#home .dialog.four {
+  -webkit-animation: scale 0.5s 1.4s, opacity 1.7s;
+          animation: scale 0.5s 1.4s, opacity 1.7s;
+}
+
+#projects .gallery, #illustrations .gallery {
+  -webkit-animation: opacity2 0.5s;
+          animation: opacity2 0.5s;
 }/*# sourceMappingURL=style.css.map */
