@@ -761,6 +761,52 @@ nav li:first-child a {
             transform: scale(1);
   }
 }
+@-webkit-keyframes testdisplayno {
+  0% {
+    display: list-item;
+    opacity: 1;
+  }
+  50% {
+    display: list-item;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes testdisplayno {
+  0% {
+    display: list-item;
+    opacity: 1;
+  }
+  50% {
+    display: list-item;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+@-webkit-keyframes testdisplayyes {
+  0% {
+    display: list-item;
+    opacity: 0;
+  }
+  100% {
+    display: list-item;
+    opacity: 1;
+  }
+}
+@keyframes testdisplayyes {
+  0% {
+    display: list-item;
+    opacity: 0;
+  }
+  100% {
+    display: list-item;
+    opacity: 1;
+  }
+}
 nav {
   -webkit-animation: opacity2 0.5s;
           animation: opacity2 0.5s;
@@ -786,4 +832,13 @@ nav {
 #projects .gallery, #illustrations .gallery {
   -webkit-animation: opacity2 0.5s;
           animation: opacity2 0.5s;
+}
+
+@media screen and (min-width: 801px) {
+  .home nav li {
+    position: absolute;
+  }
+  .home nav li.shownav, nav li:hover, nav li.active:hover, nav li:first-child.active {
+    position: relative;
+  }
 }/*# sourceMappingURL=style.css.map */
