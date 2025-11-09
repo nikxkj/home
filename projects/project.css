@@ -6,6 +6,12 @@ h2{
     font-size: 1.5rem;
 }
 
+.home nav li{transform: scale(1);margin: 40px 0;max-height: 400px;}
+.home nav li a{pointer-events: unset;}
+.home nav li:nth-child(4) a{display: inline-block;transition: 0.5s max-width,0.5s padding;}
+nav li:nth-child(4) .invisible{display: none;}
+nav li:hover:nth-child(4) a{max-width: 95px;}
+
 .dialog{position: relative;}
 
 section{min-height: unset;}
