@@ -10,10 +10,14 @@ var home = document.getElementById("home");
 var projects = document.querySelector("#projects .gallery");
 var illustrations = document.querySelector("#illustrations .gallery");
 
+/*
 for (var i = 0; i < navlis.length; i++) {
   var navli = navlis[i];
-  navli.setAttribute("onclick", "myClickFunction()");
+  navli.setAttribute("onclick", "reAddFunction()");
 }
+*/
+
+htmlsec.classList.add("home");
 
 //onscroll viewport behavior
 (function () {
@@ -28,8 +32,12 @@ for (var i = 0; i < navlis.length; i++) {
     if (home) {
       if (!elementInViewport(home)) {
         htmlsec.classList.add("nothome");
+        if (document.getElementsByClassName("home")) {
+          htmlsec.classList.remove("home");
+        }
       } else {
         htmlsec.classList.remove("nothome");
+        htmlsec.classList.add("home");
       }
 
       if (elementInViewport(projects)) {
@@ -91,20 +99,8 @@ for (var i = 0; i < navlis.length; i++) {
 var dialog = document.querySelectorAll("#home .dialog");
 var dialogcancel = document.querySelectorAll("#home .dialog .cancel");
 
-for (var i = 0; i < dialog.length; i++) {
-  var dialogs = dialog[i];
-  var dialogcancels = dialogcancel[i];
-
-  dialogcancels.onclick = function () {
-    this.parentElement.classList.add("close");
-    if (dialog[1].classList.contains("close")) {
-      htmlsec.classList.add("showsm");
-    }
-  };
-}
-
+//home button function - burger behaviour and dialog popup reset
 function myClickFunction() {
-  htmlsec.classList.remove("showsm");
   if (document.querySelector(".clicked")) {
     htmlsec.classList.remove("clicked");
   }
@@ -112,13 +108,64 @@ function myClickFunction() {
   dialog.forEach((element) => {
     element.classList.remove("close");
   });
+
+  navlis.forEach((element) => {
+    element.classList.remove("shownav");
+  });
 }
+//END home button function - burger behaviour and dialog popup reset
 
 function reAddFunction() {
-  if (dialog[1].classList.contains("close")) {
-    dialog[1].classList.remove("close");
-    htmlsec.classList.remove("showsm");
+  if (document.getElementsByClassName("shownav")) {
+    this.classList.remove("shownav");
   }
+}
+/*
+let allnavs = document.querySelectorAll("nav li");
+
+// For each button, register an event listener
+allnavs.forEach(function (elem) {
+  elem.addEventListener("click", function (e) {
+    // Add or remove the class on clicked one
+    e.target.classList.remove("shownav");
+  });
+});
+*/
+
+let allnavs = document.querySelectorAll("nav li");
+let alldialogs = document.querySelectorAll("#home .dialog .cancel");
+for (var i = 0; i < dialog.length; i++) {
+  var dialoglist = dialog[i];
+  var navlist = allnavs[i];
+  dialoglist.setAttribute("data-index", i);
+  navlist.setAttribute("data-index", i);
+
+  var shownav = document.querySelectorAll("nav .shownav");
+
+  allnavs.forEach(function (elem) {
+    elem.addEventListener("click", function (e) {
+      // Add or remove the class on clicked one
+      if (document.querySelector(".clicked")) {
+        htmlsec.classList.remove("clicked");
+      }
+      e.target.classList.remove("shownav");
+      var navtesting = this.getAttribute("data-index");
+      console.log("the navi value is: " + navtesting);
+      dialog[navtesting].classList.remove("close");
+      if (navtesting == "3") {
+        //this.style.transform = "scale(0)";
+        navlis[3].classList.remove("shownav");
+      }
+    });
+  });
+
+  alldialogs.forEach(function (elem2) {
+    elem2.addEventListener("click", function (e2) {
+      var testing = this.closest(".dialog").getAttribute("data-index");
+      this.parentElement.classList.add("close");
+      navlis[testing].classList.add("shownav");
+    });
+  });
 }
 
 function navFunction() {
@@ -127,4 +174,12 @@ function navFunction() {
   } else {
     htmlsec.classList.add("clicked");
   }
+}
+
+var classcheck = document.querySelectorAll(".wrapper > h2");
+if (classcheck.length > 0) {
+  htmlsec.classList.remove("home");
+  htmlsec.classList.add("casestudy");
+} else {
+  console.log("this is NOT a case study page");
 }
