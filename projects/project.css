@@ -22,7 +22,13 @@ section{min-height: unset;}
 .dialog{display: inline-block;}
 
 section > .wrapper{margin-left: 10%;}
+section > .wrapper p, section > .wrapper ol{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.3;
+}
 
+.gallery.three .image{width: 30%;}
+.gallery.three .image:not(:first-child){margin-left: 3%;}
 
 @media screen and (max-width: 800px){
     h2{font-size: 1.3rem;}
