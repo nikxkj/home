@@ -616,6 +616,7 @@ ul li {
   }
   #illustrations .frame {
     margin-right: 0;
+    aspect-ratio: 1/1;
   }
   #projectoverview .frame {
     max-width: 100%;
