@@ -1,76 +1,136 @@
-//back to top button behaviour
+var htmlsection = document.querySelector("html");
+var projects = document.querySelector("#projects");
+var illustrations = document.querySelector("#illustrations .container");
+var contact = document.querySelector("#contact .container");
+var htmlsection = document.querySelector("html");
+var dialogboxes = document.querySelectorAll(".intro .dialog");
+var dialogcancel = document.querySelectorAll(".intro .dialog .cancel");
+var dialogmin = document.querySelectorAll(".intro .dialog .min");
+var dialogmax = document.querySelectorAll(".intro .dialog .max");
+var galleryframes = document.querySelectorAll("#portfolio .frame");
+var descriptions = document.querySelectorAll(
+  "#portfolio .description-wrapper .description",
+);
+
+var barmain = document.querySelector(".bar.main");
+var illframes = document.querySelectorAll("#illustrations .container .frame");
+
+var navitems = document.querySelectorAll("nav .navlink");
+
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-var htmlsec = document.querySelector("html");
-var navlis = document.querySelectorAll("nav li");
-var home = document.getElementById("home");
-var projects = document.querySelector("#projects .gallery");
-var illustrations = document.querySelector("#illustrations .gallery");
+//START dialog min max close script
+for (var i = 0; i < dialogboxes.length; i++) {
+  var dialogs = dialogboxes[i];
+  var dialogcancels = dialogcancel[i];
+  var dialogmins = dialogmin[i];
+  var dialogmaxs = dialogmax[i];
+  var fordialog = document.querySelectorAll("section .intro");
+  dialogboxes[i].setAttribute("data-index", i);
+  navitems[i].setAttribute("data-index", i);
 
-/*
-for (var i = 0; i < navlis.length; i++) {
-  var navli = navlis[i];
-  navli.setAttribute("onclick", "reAddFunction()");
+  var navitem = navitems[i];
+  navitem.setAttribute("onclick", "reAddFunction()"); //automatically adds the onclick attribute bc i cant be arsed to do it manually
+
+  //when nav item is clicked the dialog box should reappear
+  navitem.onclick = function () {
+    if (this.classList.contains("shownav")) {
+      navitemnumber = this.getAttribute("data-index");
+      if (dialogboxes[navitemnumber].classList.contains("close")) {
+        dialogboxes[navitemnumber].classList.remove("close");
+        this.classList.remove("shownav");
+      }
+      if (dialogboxes[navitemnumber].classList.contains("minimize")) {
+        dialogboxes[navitemnumber].classList.remove("minimize");
+        this.classList.remove("shownav");
+      }
+    }
+  };
+
+  //when clicked the dialog box will get a shownav class
+  dialogcancels.onclick = function () {
+    var dialogboxattr =
+      this.parentElement.parentElement.getAttribute("data-index");
+
+    if (this.parentElement.parentElement.classList.contains("close")) {
+      this.parentElement.parentElement.classList.remove("close");
+      navitems[dialogboxattr].classList.remove("shownav");
+    } else {
+      this.parentElement.parentElement.classList.add("close");
+      navitems[dialogboxattr].classList.add("shownav"); //onclick adds class to menu item so it can show up
+    }
+  };
+
+  dialogmins.onclick = function () {
+    var dialogboxattr =
+      this.parentElement.parentElement.getAttribute("data-index");
+
+    if (this.parentElement.parentElement.classList.contains("minimize")) {
+      this.parentElement.parentElement.classList.remove("minimize");
+      navitems[dialogboxattr].classList.remove("shownav");
+    } else {
+      this.parentElement.parentElement.classList.add("minimize");
+      navitems[dialogboxattr].classList.add("shownav");
+    }
+  };
 }
-*/
+//END dialog min max close script
 
-htmlsec.classList.add("home");
-
-//onscroll viewport behavior
+//START onscroll behaviour
 (function () {
   var prevScrollpos = window.pageYOffset;
-
-  //var navactive = document.querySelector("nav active");
 
   function onScroll() {
     var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 
-    if (home) {
-      if (!elementInViewport(home)) {
-        htmlsec.classList.add("nothome");
-        if (document.getElementsByClassName("home")) {
-          htmlsec.classList.remove("home");
-        }
-      } else {
-        htmlsec.classList.remove("nothome");
-        htmlsec.classList.add("home");
-      }
+    if (!document.getElementById("projectoverview")) {
+      var projectcheck = document.querySelectorAll("#projects .frame.active");
+      var descriptioncheck = document.querySelectorAll(
+        "#projects .description.active",
+      );
 
-      if (elementInViewport(projects)) {
-        htmlsec.classList.add("projectview");
+      if (elementInViewport(document.getElementById("portfolio"))) {
+        htmlsection.classList.add("projectview");
       } else {
-        htmlsec.classList.remove("projectview");
+        htmlsection.classList.remove("projectview");
       }
 
       if (elementInViewport(illustrations)) {
-        htmlsec.classList.add("illustrationview");
+        htmlsection.classList.add("illustrationview");
+        if (
+          elementInViewport(illframes[4]) ||
+          elementInViewport(illframes[illframes.length - 1])
+        ) {
+          setTimeout(htmlsection.classList.add("testing"), 1500);
+        } else {
+          htmlsection.classList.remove("testing");
+        }
       } else {
-        htmlsec.classList.remove("illustrationview");
+        htmlsection.classList.remove("illustrationview");
+      }
+
+      if (elementInViewport(document.getElementById("contact"))) {
+        htmlsection.classList.add("contactview");
+      } else {
+        htmlsection.classList.remove("contactview");
       }
     }
 
-    for (var i = 0; i < navlis.length; i++) {
-      var navli = navlis[i];
-
-      if (home) {
-        if (elementInViewport(home)) {
-          navli.classList.remove("active");
-          navlis[0].classList.add("active");
-        }
-        if (elementInViewport(projects)) {
-          navli.classList.remove("active");
-          navlis[1].classList.add("active");
-        }
-        if (elementInViewport(illustrations)) {
-          navli.classList.remove("active");
-          navlis[2].classList.add("active");
-        }
-      }
+    /*
+    if (
+      elementInViewport(projects) ||
+      elementInViewport(illustrations) ||
+      elementInViewport(contact)
+    ) {
+      htmlsection.classList.add("nothome");
+    } else {
+      htmlsection.classList.remove("nothome");
     }
+    */
   }
 
   function elementInViewport(el) {
@@ -96,90 +156,30 @@ htmlsec.classList.add("home");
 })();
 //END onscroll viewport behaviour
 
-var dialog = document.querySelectorAll("#home .dialog");
-var dialogcancel = document.querySelectorAll("#home .dialog .cancel");
+//adds id name to project onload and adds 'active' class to project when project is in viewport
+var list = [];
+for (var i = 0; i < galleryframes.length; i++) {
+  var projs = galleryframes[i];
 
-//home button function - burger behaviour and dialog popup reset
-function myClickFunction() {
-  if (document.querySelector(".clicked")) {
-    htmlsec.classList.remove("clicked");
-  }
+  list.push("div" + i);
 
-  dialog.forEach((element) => {
-    element.classList.remove("close");
-  });
+  var listindex = list.length;
 
-  navlis.forEach((element) => {
-    element.classList.remove("shownav");
-  });
-}
-//END home button function - burger behaviour and dialog popup reset
-
-function reAddFunction() {
-  if (document.getElementsByClassName("shownav")) {
-    this.classList.remove("shownav");
+  if (listindex > 0) {
+    projs.setAttribute("id", "div" + i);
   }
 }
-/*
-let allnavs = document.querySelectorAll("nav li");
 
-// For each button, register an event listener
-allnavs.forEach(function (elem) {
-  elem.addEventListener("click", function (e) {
-    // Add or remove the class on clicked one
-    e.target.classList.remove("shownav");
+let callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("active", entry.isIntersecting);
   });
+};
+let observer = new IntersectionObserver(callback, {
+  threshold: [0.5], // If 50% of the element is in the screen, we count it!
 });
-*/
 
-let allnavs = document.querySelectorAll("nav li");
-let alldialogs = document.querySelectorAll("#home .dialog .cancel");
-for (var i = 0; i < dialog.length; i++) {
-  var dialoglist = dialog[i];
-  var navlist = allnavs[i];
-  dialoglist.setAttribute("data-index", i);
-  navlist.setAttribute("data-index", i);
-
-  var shownav = document.querySelectorAll("nav .shownav");
-
-  allnavs.forEach(function (elem) {
-    elem.addEventListener("click", function (e) {
-      // Add or remove the class on clicked one
-      if (document.querySelector(".clicked")) {
-        htmlsec.classList.remove("clicked");
-      }
-      e.target.classList.remove("shownav");
-      var navtesting = this.getAttribute("data-index");
-      console.log("the navi value is: " + navtesting);
-      dialog[navtesting].classList.remove("close");
-      if (navtesting == "3") {
-        //this.style.transform = "scale(0)";
-        navlis[3].classList.remove("shownav");
-      }
-    });
-  });
-
-  alldialogs.forEach(function (elem2) {
-    elem2.addEventListener("click", function (e2) {
-      var testing = this.closest(".dialog").getAttribute("data-index");
-      this.parentElement.classList.add("close");
-      navlis[testing].classList.add("shownav");
-    });
-  });
-}
-
-function navFunction() {
-  if (htmlsec.classList.contains("clicked")) {
-    htmlsec.classList.remove("clicked");
-  } else {
-    htmlsec.classList.add("clicked");
-  }
-}
-
-var classcheck = document.querySelectorAll(".wrapper > h2");
-if (classcheck.length > 0) {
-  htmlsec.classList.remove("home");
-  htmlsec.classList.add("casestudy");
-} else {
-  console.log("this is NOT a case study page");
-}
+list.forEach((d) => {
+  const div = document.getElementById(d);
+  if (div) observer.observe(div);
+});
