@@ -487,6 +487,7 @@ nav div.navlink span:hover p {
   margin-right: 2%;
   height: unset;
   aspect-ratio: unset;
+  vertical-align: top;
 }
 #projectoverview .bar.main {
   opacity: 1;
