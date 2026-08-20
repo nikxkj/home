@@ -4,45 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study</title>
+    <title>Kemdi Ikejiani - Portfolio</title>
     <link href="../css/style.css" rel="stylesheet" />
-    <link href="project.css" rel="stylesheet" />
-    <link rel="icon" type="../image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 
-<body>
+<body id="projectoverview">
     <nav>
-        <div onclick="navFunction()" class="open cancel"><span>&#x25EF;</span><span>x</span></div>
-        <ul>
-            <li onclick="myClickFunction()"><a href="../index.html"><span>&#x25EF;</span><span>Home</span></a></li>
-            <li class="active"><a href="../index.html#projects"><span>&#x25EF;</span><span>Projects</span></a></li>
-            <li><a href="../index.html#illustrations"><span>&#x25EF;</span><span>Illustrations</span></a></li>
-            <li class="socialmedia">
-                <span>
-                    <span>&#x25EF;</span><span class="invisible">Social media</span><a
-                        href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a><a
-                        href="https://github.com/nikxkj" target="_blank">Github</a>
-                </span>
-            </li>
-        </ul>
+        <div>
+            <span>
+                <p class="mobile">^</p>
+                <p>Home</p><a href="#"></a>
+            </span>
+        </div>
     </nav>
 
     <section>
-        <div class="dialog">
-            <div class="cancel">
-                <p><a href="../index.html">x</a></p>
-            </div>
-            <h1>Case study</h1>
-            <p>
-                Mitto (2021) - developer, lead designer
-            </p>
+        <div class="container">
+            <h1>Case study - Mitto (2021)</h1>
+            <p>developer, lead designer</p>
         </div>
     </section>
 
     <section>
-
-        <div class="wrapper">
-
+        <div class="container">
             <h2>Intro</h2>
             <p>
                 This was one of my bigger projects. It involved redesigning multiple pages on the Mitto site and
@@ -51,15 +36,11 @@
                 meant to attract a more youthful audience. The mobile responsiveness was also highlighted as important.
             </p>
             <p>
-                <u>Tools/software used</u>: Sketch, Visual studio code, Hubspot
+                Tools/software used: Sketch, Visual studio code, Hubspot
             </p>
 
-            <div class="gallery">
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-1.jpg" alt="">
-                </div>
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-2.jpg" alt="">
-                </div>
-            </div>
+            <div class="frame"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-1.jpg" alt=""></div>
+            <div class="frame"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-2.jpg" alt=""></div>
 
             <h2>Process - Timeline, Mockups and Feedback</h2>
             <p>
@@ -68,43 +49,49 @@
                 initial research had to be conducted. I was given some old user journeys and survey data. I was also
                 given a list of competitors and I observed each site to note down what they’d done similarly and why.
             </p>
+            <ul>
+                <li>What are the similarities across competitors?
+                <li>Why were these features implemented?</li>
+                <li>Will this experience be useful on the Mitto site?</li>
+            </ul>
+
             <p>
-                - What are the similarities across competitors?<br>
-                - Why were these features implemented?<br>
-                - Will this experience be useful on the Mitto site?
+                I was also given the colour palette which I liked given the time restraint. Creating a colour palette
+                for a project adds more back and forth which would mean more time spent on reviewing colours rather than
+                designs which is another reason it’s faster and easier to work on an already existing site with a great
+                brand guideline.
             </p>
-            <p>
-                I was also given the colour palette which I liked. Creating a colour palette for a project adds more
-                back and forth which would mean more time spent on reviewing colours rather than designs which is
-                another reason it’s faster and easier to work on an already existing site with a great brand guideline.
-            </p>
+
 
             <h2>Gallery</h2>
-
-            <div class="gallery three">
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-mockup-1.jpg" alt="">
-                </div>
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-1.jpg" alt="">
-                </div>
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-example-2.jpg" alt="">
-                </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/mitto-mockup-1.jpg" alt="">
             </div>
-
-            <div class="gallery three">
-                <div class="image"><img src="https://nikxkj.github.io/home/projects/img/mitto-mobile2.png" alt="">
-                </div>
-                <div class="image"><img src="img/mitto-mobile.png" alt="">
-                </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/mitto-example-1.jpg" alt="">
+            </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/mitto-example-2.jpg" alt="">
+            </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/mitto-mobile2.png" alt="">
+            </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/mitto-mobile.png" alt="">
             </div>
 
         </div>
-
     </section>
 
 
+    <div class="bar main">
+        <div class="cancel" onclick="topFunction()"><a href="../index.html"><img src="../img/red.svg" alt=""></a></div>
+        <div class="min" onclick="topFunction()"><a href="../index.html"><img src="../img/yellow.svg" alt=""></a></div>
+        <div class="max" onclick="topFunction()"><a href="../index.html"><img src="../img/minimize.svg" alt=""></a>
+        </div>
+    </div>
+
     <script src="../js/script.js"></script>
-
-
 </body>
 
 </html>

@@ -4,59 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study</title>
+    <title>Portfolio</title>
     <link href="../css/style.css" rel="stylesheet" />
-    <link href="project.css" rel="stylesheet" />
-    <link rel="icon" type="../image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 
-<body>
+<body id="projectoverview">
     <nav>
-        <div onclick="navFunction()" class="open cancel"><span>&#x25EF;</span><span>x</span></div>
-        <ul>
-            <li onclick="myClickFunction()"><a href="../index.html"><span>&#x25EF;</span><span>Home</span></a></li>
-            <li class="active"><a href="../index.html#projects"><span>&#x25EF;</span><span>Projects</span></a></li>
-            <li><a href="../index.html#illustrations"><span>&#x25EF;</span><span>Illustrations</span></a></li>
-            <li class="socialmedia">
-                <span>
-                    <span>&#x25EF;</span><span class="invisible">Social media</span><a
-                        href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a><a
-                        href="https://github.com/nikxkj" target="_blank">Github</a>
-                </span>
-            </li>
-        </ul>
+        <div>
+            <span>
+                <p class="mobile">^</p>
+                <p>Home</p><a href="#"></a>
+            </span>
+        </div>
     </nav>
 
     <section>
-        <div class="dialog">
-            <div class="cancel">
-                <p><a href="../index.html">x</a></p>
-            </div>
-            <h1>Case study</h1>
-            <p>
-                Booktopia (2022) - solo designer
-            </p>
+        <div class="container">
+            <h1>Case study - Booktopia (Personal Project)</h1>
+            <p>developer, solo designer</p>
         </div>
     </section>
 
     <section>
-
-        <div class="wrapper">
-
+        <div class="container">
             <h2>Intro</h2>
             <p>
                 Booktopia is an app that helps people easily find and save books. In addition to the app, there is also
-                a website. <br><em>**Personal project</em>
+                a website.
             </p>
             <p>
-                <u>Tools/software used</u>: Adobe XD, Illustrator, Procreate
+                <em>**Note that that was a personal project that didn't officially ship out</em>
+            </p>
+            <p>
+                Tools/software used: Adobe XD, Visual studio code, Procreate (iPad)
             </p>
 
-            <div class="gallery">
-                <div class="image">
-                    <img src="https://nikxkj.github.io/home/img/booktopia-userjourney.png" alt="">
-                </div>
-            </div>
+            <div class="frame"><img src="https://nikxkj.github.io/home/img/booktopia-userjourney.png" alt=""></div>
 
             <h2>Process - Timeline, Mockups and Feedback</h2>
             <p>
@@ -65,43 +49,56 @@
                 multiple sites, movies, series, etc. took notes of the positives and what would make for a better user
                 experience. I was able to build out a user journey based on my notes. Then I began working on wireframes
             </p>
-            <p>
-                - What is the main goal of this website/app?<br>
-                - Who is the target audience?<br>
-                - Which experience should be prioritized? App or Website?<br>
-                - How do we expect people to use this product?<br>
-                - What colours would work best tp bring this to life?
-            </p>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/booktopia-wireframe.png" alt="">
+            </div>
+            <ul>
+                <li>What is the main goal of this website/app?</li>
+                <li>Who is the target audience?</li>
+                <li>Which experience should be prioritized? App or Website?</li>
+                <li>How do we expect people to use this product?</li>
+                <li>What colours would work best tp bring this to life?</li>
+            </ul>
+
             <p>
                 After deciding on what part of the layout worked best, I made a high fidelity mockup and chose the
                 colour palette. Initial sketches were done in Procreate. Final designs were completed in Adobe XD. Icons
                 were created on Adobe Illustrator
             </p>
 
+            <h2>Colours</h2>
+            <ul class="colours">
+                <li>#8684ff</li>
+                <li>#222155</li>
+                <li>#f2f1ff</li>
+            </ul>
+
             <h2>Gallery</h2>
-
-            <div class="gallery">
-                <div class="image"><img src="img/booktopia-wireframe.png" alt=""></div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/booktopia-app-2.jpg" alt="">
             </div>
-
-            <div class="gallery three">
-                <div class="image"><img src="img/booktopia-app-2.jpg" alt=""></div>
-                <div class="image"><img src="img/booktopia-app-3.jpg" alt=""></div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/booktopia-app-3.jpg" alt="">
             </div>
-
-            <div class="gallery">
-                <div class="image"><img src="img/booktopia-web.png" alt=""></div>
-                <div class="image"><img src="img/booktopia-0.png" alt=""></div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/booktopia-web.png" alt="">
+            </div>
+            <div class="frame">
+                <img src="https://nikxkj.github.io/home/projects/img/booktopia-0.png" alt="">
             </div>
 
         </div>
-
     </section>
 
 
+    <div class="bar main">
+        <div class="cancel" onclick="topFunction()"><a href="../index.html"><img src="../img/red.svg" alt=""></a></div>
+        <div class="min" onclick="topFunction()"><a href="../index.html"><img src="../img/yellow.svg" alt=""></a></div>
+        <div class="max" onclick="topFunction()"><a href="../index.html"><img src="../img/minimize.svg" alt=""></a>
+        </div>
+    </div>
+
     <script src="../js/script.js"></script>
-
-
 </body>
 
 </html>
