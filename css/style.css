@@ -596,7 +596,7 @@ ul li {
   }
   .projectview nav > div:first-child, .illustrationview nav > div:first-child, .contactview nav > div:first-child {
     opacity: 1;
-    pointer-events: none;
+    pointer-events: unset;
   }
   .projectview nav > div:first-child p, .illustrationview nav > div:first-child p, .contactview nav > div:first-child p {
     display: none;
