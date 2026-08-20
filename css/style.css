@@ -215,15 +215,15 @@ nav div.navlink span:hover p {
 }
 .dialog.one {
   left: 5%;
-  top: 40vh;
+  top: 36vh;
 }
 .dialog.two {
   right: 15%;
   top: 25vh;
 }
 .dialog.three {
-  right: 5%;
-  top: 35vh;
+  right: 4%;
+  top: 42vh;
 }
 .dialog {
   /*
