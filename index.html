@@ -10,160 +10,216 @@
 </head>
 
 <body>
-    <nav>
-        <div onclick="navFunction()" class="open cancel"><span>&#x25EF;</span><span>x</span></div>
-        <ul>
-            <li class="active" onclick="myClickFunction()"><a href="#"><span>&#x25EF;</span><span>Home</span></a></li>
-            <li><a href="#projects"><span>&#x25EF;</span><span>Projects</span></a></li>
-            <li><a href="#illustrations"><span>&#x25EF;</span><span>Illustrations</span></a></li>
-            <li class="socialmedia">
-                <span>
-                    <span>&#x25EF;</span><span class="invisible">Social media</span><a
-                        href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a><a
-                        href="https://github.com/nikxkj" target="_blank">Github</a>
-                </span>
-            </li>
-        </ul>
-    </nav>
 
     <section id="home">
-        <div class="one dialog">
-            <div class="cancel">
-                <p>x</p>
-            </div>
-            <h1>Hi there! I'm Kemdi</h1>
+
+        <div class="container">
+            <h1>Hi there! I’m Kemdi</h1>
             <p>
-                I also go by Nik sometimes. I'm a multidisciplinary artist based in Toronto, Canada with a strong focus
+                Welcome to my portfolio. I’m a multidisciplinary artist based in Toronto, Canada with a strong focus
                 in web design. Currently a UI/UX Designer at CI Financial.
             </p>
         </div>
 
-        <div class="two dialog">
-            <div class="cancel">
-                <p>x</p>
-            </div>
-            <h2>Projects</h2>
-            <p>
-                View some of my case studies
-            </p>
-            <p class="navigate">
-                <a href="#projects">Navigate</a>
-            </p>
-        </div>
-
-        <div class="three dialog">
-            <div class="cancel">
-                <p>x</p>
-            </div>
-            <h2>Illustrations</h2>
-            <p>
-                View some of my random drawings
-            </p>
-            <p class="navigate">
-                <a href="#illustrations">Navigate</a>
-            </p>
-        </div>
-
-        <div class="four dialog">
-            <div class="cancel">
-                <p>x</p>
-            </div>
-            <h2>Social media</h2>
-            <p>
-                <a href="https://www.linkedin.com/in/k-ikejiani/" target="_blank">LinkedIn</a> , <a
-                    href="https://github.com/nikxkj" target="_blank">Github</a>
-            </p>
-        </div>
     </section>
 
-    <section id="projects">
-        <div class="dialog">
-            <div class="cancel">
-                <p onclick="topFunction()">x</p>
-            </div>
-            <h2>Projects</h2>
-            <p>
-                View some of my case studies
-            </p>
-        </div>
+    <div class="spacing" style="padding: 10px;opacity: 0;width: 5px;pointer-events: none;"></div>
 
-        <div class="gallery">
-            <div class="image">
-                <img src="img/1.png" alt="">
-                <a href="projects/1.html"></a>
-                <p class="navigate">View case study</p>
-            </div>
 
-            <div class="image">
-                <img src="img/2.png" alt="">
-                <a href="projects/2.html"></a>
-                <p class="navigate">View case study</p>
-            </div>
+    <section id="portfolio">
 
-            <div class="image">
-                <img src="img/3.png" alt="">
-                <a href="projects/3.html"></a>
-                <p class="navigate">View case study</p>
-            </div>
-
-            <div class="image">
-                <img src="img/4.png" alt="">
-                <a href="projects/1.html"></a>
-                <p class="navigate">View case study</p>
+        <div class="intro">
+            <div class="dialog one">
+                <div class="bar">
+                    <div class="cancel"><img src="img/red.svg" alt=""></div>
+                    <div class="min"><img src="img/yellow.svg" alt=""></div>
+                    <div class="max"><a href="#portfolio"><img src="img/green.svg" alt=""></a></div>
+                </div>
+                <div class="body">
+                    <h2>Projects</h2>
+                    <p>View some of my case studies</p>
+                    <p class="navigate">
+                        <a href="#portfolio">Navigate</a>
+                    </p>
+                </div>
             </div>
         </div>
 
+
+        <div class="container spacing" id="projects">
+
+            <div class="gallery">
+
+                <div class="frame active">
+                    <img src="projects/img/cidi-0.jpg" alt="">
+                    <div class="description active">
+                        <h2>Wealthbar CIDI Rebrand (2021-2022)</h2>
+                        <p>
+                            front-end developer, designer
+                        </p>
+                        <p>
+                            <a href="projects/1.html">View case study</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="img/2.png" alt="">
+                    <div class="description">
+                        <h2>Mitto (2021)</h2>
+                        <p>
+                            developer, lead designer
+                        </p>
+                        <p>
+                            <a href="projects/2.html">View case study</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="img/3.png" alt="">
+                    <div class="description">
+                        <h2>Booktopia - Personal Project (2022)</h2>
+                        <p>
+                            developer, solo designer
+                        </p>
+                        <p>
+                            <a href="projects/3.html">View case study</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="frame active">
+                    <img src="projects/img/cipw-0.png" alt="">
+                    <div class="description active">
+                        <h2>Landing page designs (2019 - current)</h2>
+                        <p>
+                            developer, lead designer
+                        </p>
+                        <p>
+                            <a href="projects/archive.html">View case study</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="frame active">
+                    <img src="projects/img/ellehacks-0.png" alt="">
+                    <div class="description active">
+                        <h2>Ellehacks website (2019)</h2>
+                        <p>
+                            art director, solo designer
+                        </p>
+                        <p>
+                            <a href="projects/4.html">View case study</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </section>
 
 
     <section id="illustrations">
-        <div class="dialog">
-            <div class="cancel">
-                <p onclick="topFunction()">x</p>
-            </div>
-            <h2>Illustrations</h2>
-            <p>
-                View some of my drawings
-            </p>
-        </div>
 
-        <div class="gallery">
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/normal-people.jpg" alt="">
-                <p class="navigate">Normal people</p>
-            </div>
-
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/peaches.jpg" alt="">
-                <p class="navigate">My sister's dog</p>
-            </div>
-
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/couple.jpg" alt="">
-                <p class="navigate">A couple of people</p>
-            </div>
-
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/boat.jpg" alt="">
-                <p class="navigate">Date</p>
-            </div>
-
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/glasses.png" alt="">
-                <p class="navigate">Glasses</p>
-            </div>
-
-            <div class="image">
-                <img src="https://nikxkj.github.io/home/img/portrait.png" alt="">
-                <p class="navigate">Vector portrait</p>
+        <div class="intro">
+            <div class="dialog two">
+                <div class="bar">
+                    <div class="cancel"><img src="img/red.svg" alt=""></div>
+                    <div class="min"><img src="img/yellow.svg" alt=""></div>
+                    <div class="max"><a href="#illustrations"><img src="img/green.svg" alt=""></a></div>
+                </div>
+                <div class="body">
+                    <h2>Illustrations</h2>
+                    <p>View some of my random drawings</p>
+                    <p class="navigate">
+                        <a href="#illustrations">Navigate</a>
+                    </p>
+                </div>
             </div>
         </div>
 
+        <div class="container spacing">
+            <div class="frame">
+                <img src="img/normal-people.jpg" alt="">
+                <div class="description-wrapper">Normal People</div>
+            </div>
+            <div class="frame">
+                <img src="img/peaches.jpg" alt="">
+                <div class="description-wrapper">Peaches</div>
+            </div>
+            <div class="frame">
+                <img src="img/couple.jpg" alt="">
+                <div class="description-wrapper">A couple of people</div>
+            </div>
+            <div class="frame">
+                <img src="img/boat.jpg" alt="">
+                <div class="description-wrapper">Date</div>
+            </div>
+            <div class="frame">
+                <img src="img/glasses.png" alt="">
+                <div class="description-wrapper">Glasses</div>
+            </div>
+            <div class="frame">
+                <img src="img/portrait.png" alt="">
+                <div class="description-wrapper">Me</div>
+            </div>
+        </div>
     </section>
 
 
-    <script src="js/script.js"></script>
+    <section id="contact">
 
+        <div class="intro">
+            <div class="dialog three">
+                <div class="bar">
+                    <div class="cancel"><img src="img/red.svg" alt=""></div>
+                    <div class="min"><img src="img/yellow.svg" alt=""></div>
+                    <div class="max"><a href="#contact"><img src="img/green.svg" alt=""></a></div>
+                </div>
+                <div class="body">
+                    <h2>Social media</h2>
+                    <p><a href="https://www.linkedin.com/in/k-ikejiani/">LinkedIn</a>, <a
+                            href="https://github.com/nikxkj">Github</a></p>
+                    <!--<p class="navigate">
+                        <a href="#">Navigate</a>
+                    </p>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="container spacing"></div>
+    </section>
+
+    <div class="bar main">
+        <div class="cancel" onclick="topFunction()"><a href="#"><img src="img/red.svg" alt=""></a></div>
+        <div class="min" onclick="topFunction()"><a href="#"><img src="img/yellow.svg" alt=""></a></div>
+        <div class="max" onclick="topFunction()"><a href="#"><img src="img/minimize.svg" alt=""></a></div>
+    </div>
+
+    <nav>
+        <div>
+            <span>
+                <p class="mobile">^</p>
+                <p>Home</p><a href="#"></a>
+            </span>
+        </div>
+
+        <div id="bottom">
+            <div class="navlink"><span>
+                    <p>Projects</p><a href="#portfolio"></a>
+                </span></div>
+            <div class="navlink"><span>
+                    <p>Illustrations</p><a href="#illustrations"></a>
+                </span></div>
+            <div class="navlink"><span>
+                    <p>Contact</p><a href="#contact"></a>
+                </span></div>
+        </div>
+    </nav>
+
+    <script src="js/script.js"></script>
 
 </body>
 
