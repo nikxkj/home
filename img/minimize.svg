@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="bar-icons" transform="translate(-716 -936)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="17.5" cy="17.5" r="17.5" transform="translate(716 936)" fill="none"/>
+    <g id="green" transform="translate(-1.047 -2.228)">
+      <path id="Polygon_1" data-name="Polygon 1" d="M5,0l5,9H0Z" transform="translate(744.444 952.148) rotate(60)"/>
+      <path id="Polygon_2" data-name="Polygon 2" d="M5,0l5,9H0Z" transform="translate(735.444 950.648) rotate(120)"/>
+    </g>
+  </g>
+</svg>
