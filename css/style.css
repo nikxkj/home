@@ -503,6 +503,20 @@ ul li {
   display: none;
 }
 
+@media screen and (min-width: 1580px) {
+  .frame {
+    max-width: 700px;
+  }
+  #portfolio .description {
+    top: 47%;
+  }
+}
+@media screen and (min-width: 1750px) {
+  #portfolio .description {
+    left: 5%;
+    margin-left: 750px;
+  }
+}
 @media screen and (max-width: 1024px) {
   #home .container h1, #home .container p {
     width: 80%;
@@ -614,6 +628,10 @@ ul li {
   #portfolio img {
     padding: 20px;
     border: 1px solid #000;
+  }
+  #portfolio .description {
+    -webkit-transition: 0.5s opacity;
+    transition: 0.5s opacity;
   }
   #illustrations .frame {
     margin-right: 0;
