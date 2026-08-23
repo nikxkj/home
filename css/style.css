@@ -591,6 +591,7 @@ ul li {
   nav div.navlink p {
     max-width: unset;
     opacity: 1;
+    pointer-events: none;
   }
   nav div.navlink a {
     pointer-events: unset;
@@ -652,5 +653,15 @@ ul li {
     display: inline-block;
     opacity: 1;
     padding: 10px 18px;
+  }
+  .dialog.one, .dialog.two, .dialog.three {
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    max-width: 100%;
+  }
+  .dialog.one .bar, .dialog.two .bar, .dialog.three .bar {
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */
