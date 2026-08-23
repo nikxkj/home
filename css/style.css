@@ -91,8 +91,8 @@ nav div p {
   display: inline-block;
   padding: 10px 25px;
   text-decoration: none;
-  -webkit-transition: 0.5s max-width, 0.5s opacity, 0.5s padding;
-  transition: 0.5s max-width, 0.5s opacity, 0.5s padding;
+  -webkit-transition: 0.5s max-width, 0.5s opacity, 0.3s padding;
+  transition: 0.5s max-width, 0.5s opacity, 0.3s padding;
   margin: 0 0;
   cursor: pointer;
 }
@@ -515,6 +515,12 @@ ul li {
   #portfolio .description {
     left: 5%;
     margin-left: 750px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .projectview #bottom, .illustrationview #bottom, .contactview #bottom {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 @media screen and (max-width: 1024px) {
